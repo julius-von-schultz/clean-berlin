@@ -24,5 +24,5 @@ jobs:
 
     - name: Build
       run: |
-        npm install
+        npm ci --cache .npm --prefer-offline
         npm run build
