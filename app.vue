@@ -8,6 +8,6 @@
 
 <style lang="scss">
 html {
-  font-family: 'Inter-VariableFont_opsz,wght', serif;
+  font-family: 'Inter', sans-serif;
 }
 </style>
