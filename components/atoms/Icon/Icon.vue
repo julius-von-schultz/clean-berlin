@@ -7,8 +7,7 @@
   />
   <span
     v-else
-    class="material-icons"
-    :class="['icon__material', `icon--${size}`]"
+    :class="['icon__material', `icon--${size}`, outlined ? 'material-icons-outlined': 'material-icons']"
     @click="$emit('click')"
   >
     {{ icon }}
@@ -28,6 +27,10 @@ export default defineComponent({
     icon: {
       type: String,
       required: true,
+    },
+    outlined: {
+      type: Boolean,
+      default: true,
     },
     /**
      * The size of the icon

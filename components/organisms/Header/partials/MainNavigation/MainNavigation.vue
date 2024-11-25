@@ -11,10 +11,10 @@
 
 <script setup lang="ts">
 const entries = [
-  { index: 0, label: 'Events', icon: 'arrow_forward' },
-  { index: 1, label: 'Favoriten', icon: 'arrow_forward' },
-  { index: 1, label: 'Karte', icon: 'arrow_forward' },
-  { index: 1, label: 'Kalender', icon: 'arrow_forward' },
+  { index: 0, label: 'Events', icon: 'list' },
+  { index: 1, label: 'Favoriten', icon: 'star' },
+  { index: 1, label: 'Karte', icon: 'map' },
+  { index: 1, label: 'Kalender', icon: 'event' },
 ]
 </script>
 
