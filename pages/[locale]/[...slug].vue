@@ -1,7 +1,14 @@
 <template>
-  <div>
-    <ContentWrapper width="narrow">
-      <Headline headline="Events" />
+    <ContentWrapper width="narrow" class="index-page">
+      <Headline headline="Events" class="index-page__headline"/>
+      <SearchBar />
     </ContentWrapper>
-  </div>
 </template>
+
+<style lang="scss">
+.index-page {
+  &__headline {
+    @apply pb-5;
+  }
+}
+</style>
