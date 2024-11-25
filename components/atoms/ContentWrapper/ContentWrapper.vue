@@ -17,10 +17,17 @@ const props = defineProps({
 <style lang="scss">
 .content-wrapper {
   @apply h-full;
+  justify-self: center;
 
   &--wide {
     @screen lg {
       @apply w-[1064px];
+    }
+  }
+
+  &--narrow {
+    @screen lg {
+      @apply w-[908px];
     }
   }
 }

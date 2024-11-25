@@ -3,11 +3,16 @@
     <Transition name="page">
       <div v-show="true">
         <Header />
-        <div>
+        <div class="content">
           <slot />
         </div>
       </div>
     </Transition>
   </div>
 </template>
-<script setup lang="ts"></script>
+
+<style lang="scss">
+.content {
+ @apply mt-[52px];
+}
+</style>

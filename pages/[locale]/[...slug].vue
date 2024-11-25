@@ -1,6 +1,7 @@
 <template>
   <div>
-    <span>Hallo</span>
-    <InputField class="header__searchbar"/>
+    <ContentWrapper width="narrow">
+      <Headline headline="Events" />
+    </ContentWrapper>
   </div>
 </template>
