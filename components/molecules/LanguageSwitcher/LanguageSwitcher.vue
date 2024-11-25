@@ -52,9 +52,14 @@ onLanguageSwitched('switcher', () => {
   &__button {
     @apply flex flex-row;
     @apply gap-x-3;
+    @apply cursor-pointer;
 
     @screen lg {
       @apply text-cb-white;
+    }
+
+    &:hover {
+      @apply text-cb-green-lighter;
     }
   }
 
@@ -87,7 +92,7 @@ onLanguageSwitched('switcher', () => {
   }
 
   &__content li:hover {
-    @apply bg-cb-orange;
+    @apply bg-cb-green;
     @apply text-cb-white;
   }
 

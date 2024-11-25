@@ -26,5 +26,11 @@ const props = defineProps({
   @apply w-[142px];
   @apply justify-between;
   @apply text-[20px] font-semibold;
+  align-items: center;
+
+  &:hover{
+    @apply cursor-pointer;
+    @apply text-cb-green-lighter;
+  }
 }
 </style>
