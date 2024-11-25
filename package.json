@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "spiro-app",
+  "name": "clean-berlin",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -18,6 +18,7 @@
     "@nuxtjs/i18n": "^8.1.1",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@pinia/nuxt": "^0.7.0",
+    "material-icons": "^1.13.12",
     "nuxt": "^3.13.2",
     "pinia": "^2.2.6",
     "vue": "^3.5.12",
@@ -29,6 +30,6 @@
     "eslint": "^9.14.0",
     "eslint-config-prettier": "^9.1.0",
     "prettier": "3.3.3",
-    "sass": "^1.80.7"
+    "sass": "^1.72.0"
   }
 }
