@@ -1,3 +1,6 @@
 {
-  "test": "Das ist ein Test"
+  "header": {
+    "imageLogoAlt": "Logo",
+    "languageSwitcherLabel": "Sprache"
+  }
 }
