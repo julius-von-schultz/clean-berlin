@@ -1,16 +1,24 @@
 <template>
   <div class="header">
     <ContentWrapper class="header__grid">
-      <SearchBar placeholder="Suche nach Datum, Ort oder Schlagwort …" class="header__search-bar"/>
+      <ErrorMessage />
+      <SearchBar :placeholder="$t('header.searchPlaceholder')" class="header__search-bar"/>
       <LanguageSwitcher class="header__language-switcher"/>
       <MainNavigation class="header__main-navigation"/>
     </ContentWrapper>
   </div>
 </template>
 
-<script setup lang="ts">
-import ContentWrapper from '~/components/atoms/ContentWrapper/ContentWrapper.vue'
-import LanguageSwitcher from '~/components/molecules/LanguageSwitcher/LanguageSwitcher.vue'
+<script lang="ts">
+export default defineComponent({
+  setup() {
+    const { t } = useI18n()
+
+    return {
+      t
+    }
+  }
+})
 </script>
 
 <style lang="scss">

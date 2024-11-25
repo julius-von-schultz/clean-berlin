@@ -1,6 +1,10 @@
 {
   "header": {
     "imageLogoAlt": "Logo",
-    "languageSwitcherLabel": "Language"
+    "languageSwitcherLabel": "Language",
+    "searchPlaceholder": "Search by date, location or keyword ..."
+  },
+  "indexPage": {
+    "searchPlaceholder": "Search event, district, term, time ..."
   }
 }
