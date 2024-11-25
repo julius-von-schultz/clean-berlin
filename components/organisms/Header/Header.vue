@@ -5,6 +5,7 @@
       <SearchBar :placeholder="$t('header.searchPlaceholder')" class="header__search-bar"/>
       <LanguageSwitcher class="header__language-switcher"/>
       <MainNavigation class="header__main-navigation"/>
+      <CbButton label="Login" class="header__login-button"/>
     </ContentWrapper>
   </div>
 </template>
@@ -53,9 +54,21 @@ export default defineComponent({
   }
 
   &__main-navigation {
+    align-self: flex-end;
+    @apply mb-[26px];
     @screen lg {
       @apply row-start-2;
       @apply col-start-1 col-end-7;
+    }
+  }
+
+  &__login-button {
+    align-self: flex-end;
+    @apply mb-[26px];
+    @screen lg {
+      @apply row-start-2;
+      @apply col-start-9;
+      @apply col-end-11;
     }
   }
 }

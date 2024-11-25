@@ -22,7 +22,5 @@ const entries = [
 .main-navigation {
   @apply flex;
   @apply gap-x-8;
-  align-self: flex-end;
-  @apply pb-[26px];
 }
 </style>
