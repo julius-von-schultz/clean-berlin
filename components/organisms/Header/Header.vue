@@ -1,8 +1,9 @@
 <template>
   <div class="header">
     <ContentWrapper class="header__grid">
-      <MainNavigation class="header__main-navigation"/>
+      <InputField class="header__searchbar"/>
       <LanguageSwitcher class="header__language-switcher"/>
+      <MainNavigation class="header__main-navigation"/>
     </ContentWrapper>
   </div>
 </template>

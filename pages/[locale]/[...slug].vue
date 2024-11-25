@@ -1,3 +1,6 @@
 <template>
-  <div>Hallo Welt</div>
+  <div>
+    <span>Hallo</span>
+    <InputField class="header__searchbar"/>
+  </div>
 </template>
