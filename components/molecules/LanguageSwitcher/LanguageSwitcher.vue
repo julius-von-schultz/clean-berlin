@@ -1,5 +1,3 @@
 <template>
-  <div class="language-switcher">
-    De
-  </div>
+  <div class="language-switcher">De</div>
 </template>

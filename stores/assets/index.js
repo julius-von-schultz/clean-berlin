@@ -6,11 +6,11 @@ export const useAssetsStore = defineStore('assets', () => {
       import.meta.glob('~/assets/svg/*.svg', {
         query: '?raw',
         import: 'default',
-      })
+      }),
     ).map(([key, value]) => {
       const filename = key.split('/').pop().split('.').shift()
       return [filename, value]
-    })
+    }),
   )
 
   const getSvgByName = (name) => assetIcons[name]?.()
