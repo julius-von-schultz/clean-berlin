@@ -8,6 +8,6 @@
 
 <style lang="scss">
 html {
-  font-family: 'AnekMalayalam', serif;
+  font-family: 'Inter-VariableFont_opsz,wght', serif;
 }
 </style>
