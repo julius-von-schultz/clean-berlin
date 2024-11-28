@@ -10,7 +10,11 @@ import EventCard from '~/components/molecules/EventCard/EventCard.vue'
 
 <style lang="scss">
 .event-card-grid {
+  @apply h-full;
   @apply grid grid-cols-4;
   @apply gap-[18px];
+  @apply mx-8;
+  justify-self: center;
+  @apply mx-8;
 }
 </style>

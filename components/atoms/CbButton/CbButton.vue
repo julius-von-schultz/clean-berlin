@@ -1,5 +1,10 @@
 <template>
-  <button class="button" :class="'button--secondary'">
+  <button
+    :class="[
+      'button',
+    { 'button--secondary': true },
+   {  'button--small': props.isSmall }
+   ]">
     <span>
       {{ props.label }}
     </span>
@@ -12,6 +17,14 @@ const props = defineProps({
   label: {
     type: String,
     default: '',
+  },
+  isSmall: {
+    type: Boolean,
+    default: false,
+  },
+  isSecondary: {
+    type: Boolean,
+    default: false,
   },
 })
 </script>
@@ -39,6 +52,10 @@ const props = defineProps({
     @apply text-cb-green;
     @apply border-cb-green;
     @apply shadow-button;
+  }
+
+  &--small {
+    @apply h-8;
   }
 }
 </style>
