@@ -7,8 +7,8 @@ const props = defineProps({
   headline: {
     type: String,
     default: '',
-    required: true
-  }
+    required: true,
+  },
 })
 </script>
 

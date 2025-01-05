@@ -13,6 +13,6 @@
 
 <style lang="scss">
 .content {
- @apply mt-[52px];
+  @apply mt-[52px];
 }
 </style>

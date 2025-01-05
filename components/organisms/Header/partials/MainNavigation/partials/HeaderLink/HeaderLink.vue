@@ -28,7 +28,7 @@ const props = defineProps({
   @apply text-[20px] font-semibold;
   align-items: center;
 
-  &:hover{
+  &:hover {
     @apply cursor-pointer;
     @apply text-cb-green-lighter;
   }

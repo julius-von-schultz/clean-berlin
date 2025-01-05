@@ -7,7 +7,7 @@ export const useInputValidator = (rules, data) => {
         ...rules,
       },
     },
-    { internalValue: data }
+    { internalValue: data },
   )
 
   const validateInput = async () => {

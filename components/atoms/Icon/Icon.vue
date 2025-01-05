@@ -7,7 +7,11 @@
   />
   <span
     v-else
-    :class="['icon__material', `icon--${size}`, outlined ? 'material-icons-outlined': 'material-icons']"
+    :class="[
+      'icon__material',
+      `icon--${size}`,
+      outlined ? 'material-icons-outlined' : 'material-icons',
+    ]"
     @click="$emit('click')"
   >
     {{ icon }}

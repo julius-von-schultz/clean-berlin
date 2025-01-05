@@ -3,9 +3,10 @@
     :class="[
       'button',
       { 'button--primary': props.variant === 'primary' },
-    { 'button--secondary': props.variant === 'secondary' },
-   {  'button--small': props.isSmall }
-   ]">
+      { 'button--secondary': props.variant === 'secondary' },
+      { 'button--small': props.isSmall },
+    ]"
+  >
     <span>
       {{ props.label }}
     </span>

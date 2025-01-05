@@ -6,16 +6,16 @@
       @click="$emit('click:icon', internalValue)"
     />
     <input
-    v-bind="{ placeholder, ...$attrs }"
-    ref="input"
-    v-model="internalValue"
-    type="text"
-    class="search-bar__input"
-    :placeholder="placeholder"
-    @keypress.enter="$emit('submit', internalValue)"
-    @focus="$emit('focus', true)"
-    @input="updateValue"
-  />
+      v-bind="{ placeholder, ...$attrs }"
+      ref="input"
+      v-model="internalValue"
+      type="text"
+      class="search-bar__input"
+      :placeholder="placeholder"
+      @keypress.enter="$emit('submit', internalValue)"
+      @focus="$emit('focus', true)"
+      @input="updateValue"
+    />
   </div>
 </template>
 

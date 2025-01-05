@@ -2,10 +2,17 @@
   <div class="header">
     <ContentWrapper class="header__grid">
       <ErrorMessage />
-      <SearchBar :placeholder="$t('header.searchPlaceholder')" class="header__search-bar"/>
-      <LanguageSwitcher class="header__language-switcher"/>
-      <MainNavigation class="header__main-navigation"/>
-      <CbButton label="Login" variant="secondary" class="header__login-button"/>
+      <SearchBar
+        :placeholder="$t('header.searchPlaceholder')"
+        class="header__search-bar"
+      />
+      <LanguageSwitcher class="header__language-switcher" />
+      <MainNavigation class="header__main-navigation" />
+      <CbButton
+        label="Login"
+        variant="secondary"
+        class="header__login-button"
+      />
     </ContentWrapper>
   </div>
 </template>
@@ -16,9 +23,9 @@ export default defineComponent({
     const { t } = useI18n()
 
     return {
-      t
+      t,
     }
-  }
+  },
 })
 </script>
 

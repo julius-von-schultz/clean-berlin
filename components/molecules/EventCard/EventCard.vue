@@ -6,7 +6,10 @@
       class="event-card__image"
       src="https://hsg-berlin.de/fileadmin/_processed_/a/b/csm_Kehrenbu__rger_2_9f3039378c.png"
     />
-    <p class="event-card__short-description">Parkevent um zusammenzukommen und den Böckler-Park vom Müll zu befreien Parkevent um zusammenzukommen und den Böckler-Park vom Müll zu</p>
+    <p class="event-card__short-description">
+      Parkevent um zusammenzukommen und den Böckler-Park vom Müll zu befreien
+      Parkevent um zusammenzukommen und den Böckler-Park vom Müll zu
+    </p>
     <div class="event-card__text-wrapper">
       <div class="event-card__title">Park aufräumen</div>
       <div class="event-card__further-information-wrapper">
@@ -26,12 +29,11 @@
         </div>
       </div>
     </div>
-    <div class="event-card__date">
-      25.12.2024
-    </div>
+    <div class="event-card__date">25.12.2024</div>
   </div>
 </template>
 
+<script setup lang="ts"></script>
 <style lang="scss">
 .event-card {
   @apply bg-cb-grey-9;
@@ -59,10 +61,10 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    background-color: #D6D6D699;
+    background-color: #d6d6d699;
     border-top: #d9d9d900 14px solid;
     border-bottom: #d9d9d900 12px solid;
-    mask-image: linear-gradient(to bottom, transparent 0%, #D9D9D9 10%);
+    mask-image: linear-gradient(to bottom, transparent 0%, #d9d9d9 10%);
   }
 
   &__text-wrapper {
@@ -123,5 +125,3 @@
   }
 }
 </style>
-<script setup lang="ts">
-</script>

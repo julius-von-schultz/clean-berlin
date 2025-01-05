@@ -3,13 +3,15 @@
     <ContentWrapper width="narrow" class="index-page">
       <Headline headline="Events" class="index-page__headline" />
       <div class="index-page__search-and-sort-container">
-        <SearchBar :placeholder="$t('header.searchPlaceholder')" class="index-page__search-bar" />
+        <SearchBar
+          :placeholder="$t('header.searchPlaceholder')"
+          class="index-page__search-bar"
+        />
         <CbButton class="index-page__sort-button" label="Sort by" />
       </div>
     </ContentWrapper>
     <EventCardGrid class="index-page__card-grid" />
   </div>
-
 </template>
 
 <script lang="ts">
@@ -18,9 +20,9 @@ export default {
     const { t } = useI18n()
 
     return {
-      t
+      t,
     }
-  }
+  },
 }
 </script>
 
