@@ -21,7 +21,7 @@
             <Icon icon="group" size="small" />
             <span>{{ event.participants }} Teilnehmer</span>
           </div>
-          <button class="event-card__button">
+          <button class="event-card__button" @click="navigateTo(`/events/${event.id}`)">
             <span>Mehr Infos</span>
             <Icon size="small" icon="arrow_forward" />
           </button>
