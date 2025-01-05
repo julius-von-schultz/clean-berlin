@@ -1,11 +1,14 @@
 <template>
   <div class="event-card-grid">
-    <EventCard v-for="i in 16" :key="i" :event="i" />
+    <EventCard v-for="(event, index) in events.events" :key="index" :event="event" />
   </div>
 </template>
 
 <script setup lang="ts">
 import EventCard from '~/components/molecules/EventCard/EventCard.vue'
+import { useEventsStore } from '~/stores/events/events.js'
+
+const events = useEventsStore()
 </script>
 
 <style lang="scss">

@@ -7,7 +7,7 @@
           :placeholder="$t('header.searchPlaceholder')"
           class="index-page__search-bar"
         />
-        <CbButton class="index-page__sort-button" label="Sort by" />
+        <CbButton class="index-page__sort-button" label="Sortiere nach..." />
       </div>
     </ContentWrapper>
     <EventCardGrid class="index-page__card-grid" />

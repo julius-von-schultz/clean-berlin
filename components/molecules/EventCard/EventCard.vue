@@ -4,23 +4,22 @@
       width="290"
       height="180"
       class="event-card__image"
-      src="https://hsg-berlin.de/fileadmin/_processed_/a/b/csm_Kehrenbu__rger_2_9f3039378c.png"
+      :src="event.imageUrl"
     />
     <p class="event-card__short-description">
-      Parkevent um zusammenzukommen und den Böckler-Park vom Müll zu befreien
-      Parkevent um zusammenzukommen und den Böckler-Park vom Müll zu
+      {{ event.description }}
     </p>
     <div class="event-card__text-wrapper">
-      <div class="event-card__title">Park aufräumen</div>
+      <div class="event-card__title">{{ event.title }}</div>
       <div class="event-card__further-information-wrapper">
         <div class="event-card__location">
           <Icon icon="event" size="small" />
-          <span>Friedrichshain-Kreuzberg</span>
+          <span>{{ event.district }}</span>
         </div>
         <div class="event-card__participants-and-button">
           <div class="event-card__participants">
             <Icon icon="group" size="small" />
-            <span>28 Teilnehmer</span>
+            <span>{{ event.participants }} Teilnehmer</span>
           </div>
           <button class="event-card__button">
             <span>Mehr Infos</span>
@@ -29,11 +28,19 @@
         </div>
       </div>
     </div>
-    <div class="event-card__date">25.12.2024</div>
+    <div class="event-card__date">{{ event.date }}</div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps({
+  event: {
+    type: Object,
+    default: () => {},
+  },
+});
+</script>
+
 <style lang="scss">
 .event-card {
   @apply bg-cb-grey-9;
