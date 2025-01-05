@@ -25,7 +25,7 @@ export default defineComponent({
 <style lang="scss">
 .header {
   @apply h-[180px];
-  @apply bg-cb-grey-10;
+  @apply bg-cb-grey-9;
   @apply text-cb-white;
 
   &__grid {

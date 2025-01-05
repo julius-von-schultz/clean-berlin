@@ -34,7 +34,7 @@
 
 <style lang="scss">
 .event-card {
-  @apply bg-cb-grey-10;
+  @apply bg-cb-grey-9;
   @apply text-cb-white;
   @apply rounded-xl;
   @apply h-[320px];

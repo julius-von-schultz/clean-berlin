@@ -35,7 +35,7 @@ const props = defineProps({
   @apply flex;
   align-items: center;
   justify-content: space-between;
-  @apply font-bold;
+  @apply font-semibold;
   @apply p-4;
   @apply w-full;
   @apply h-12;
@@ -49,7 +49,6 @@ const props = defineProps({
 
   &--secondary {
     border-width: 2px;
-    @apply bg-cb-grey-10;
     @apply text-cb-green;
     @apply border-cb-green;
     @apply shadow-button;
