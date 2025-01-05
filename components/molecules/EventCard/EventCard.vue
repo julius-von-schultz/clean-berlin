@@ -10,13 +10,19 @@
     <div class="event-card__text-wrapper">
       <div class="event-card__title">Park aufräumen</div>
       <div class="event-card__further-information-wrapper">
-        <div class="event-card__further-information">
+        <div class="event-card__location">
           <Icon icon="event" size="small" />
           <span>Friedrichshain-Kreuzberg</span>
         </div>
-        <div class="event-card__further-information">
-          <Icon icon="group" size="small" />
-          <span>28 Teilnehmer</span>
+        <div class="event-card__participants-and-button">
+          <div class="event-card__participants">
+            <Icon icon="group" size="small" />
+            <span>28 Teilnehmer</span>
+          </div>
+          <button class="event-card__button">
+            <span>Mehr Infos</span>
+            <Icon size="small" icon="arrow_forward" />
+          </button>
         </div>
       </div>
     </div>
@@ -45,7 +51,7 @@
     position: absolute;
     top: 38.2%;
     @apply px-6;
-    @apply text-cb-grey-11;
+    @apply text-cb-grey-10;
     @apply font-semibold;
     @apply max-h-[60px];
     @apply text-xs;
@@ -71,12 +77,35 @@
     @apply pb-4;
   }
 
-  &__further-information {
+  &__further-information-wrapper {
     @apply text-xs;
+  }
+
+  &__location {
     @apply flex;
     align-items: center;
     @apply gap-x-2;
     @apply pb-2;
+  }
+
+  &__participants-and-button {
+    @apply flex;
+    @apply justify-between;
+  }
+
+  &__participants {
+    @apply flex;
+    align-items: center;
+    @apply gap-x-2;
+  }
+
+  &__button {
+    @apply flex;
+    @apply items-center;
+    @apply gap-x-2;
+    @apply rounded-lg;
+    @apply p-2;
+    @apply border-2 border-cb-white;
   }
 
   &__date {
@@ -94,3 +123,5 @@
   }
 }
 </style>
+<script setup lang="ts">
+</script>
