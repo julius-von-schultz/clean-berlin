@@ -2,7 +2,10 @@
   <div>
     <ContentWrapper width="narrow" class="index-page">
       <Headline headline="Events" class="index-page__headline" />
-      <SearchBar :placeholder="$t('header.searchPlaceholder')" class="index-page__search-bar" />
+      <div class="index-page__search-and-sort-container">
+        <SearchBar :placeholder="$t('header.searchPlaceholder')" class="index-page__search-bar" />
+        <CbButton class="index-page__sort-button" label="Sort by" />
+      </div>
     </ContentWrapper>
     <EventCardGrid class="index-page__card-grid" />
   </div>
@@ -29,6 +32,19 @@ export default {
 
   &__card-grid {
     @apply mt-5;
+  }
+
+  &__search-and-sort-container {
+    @apply flex;
+    @apply gap-x-4;
+  }
+
+  &__search-bar {
+    @apply w-full;
+  }
+
+  &__sort-button {
+    @apply w-[30%];
   }
 }
 </style>

@@ -5,7 +5,7 @@
       <SearchBar :placeholder="$t('header.searchPlaceholder')" class="header__search-bar"/>
       <LanguageSwitcher class="header__language-switcher"/>
       <MainNavigation class="header__main-navigation"/>
-      <CbButton label="Login" class="header__login-button"/>
+      <CbButton label="Login" variant="secondary" class="header__login-button"/>
     </ContentWrapper>
   </div>
 </template>

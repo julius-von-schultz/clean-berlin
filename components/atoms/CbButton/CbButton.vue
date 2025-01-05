@@ -2,7 +2,8 @@
   <button
     :class="[
       'button',
-    { 'button--secondary': true },
+      { 'button--primary': props.variant === 'primary' },
+    { 'button--secondary': props.variant === 'secondary' },
    {  'button--small': props.isSmall }
    ]">
     <span>
@@ -22,9 +23,9 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  isSecondary: {
-    type: Boolean,
-    default: false,
+  variant: {
+    type: String,
+    default: 'primary',
   },
 })
 </script>
@@ -41,9 +42,9 @@ const props = defineProps({
   @apply rounded-lg;
 
   &--primary {
-    // TODO: Implement primary
-    @apply bg-cb-white;
-    @apply text-cb-grey-12;
+    @apply bg-cb-green-darker;
+    @apply text-cb-white;
+    @apply shadow-button;
   }
 
   &--secondary {
