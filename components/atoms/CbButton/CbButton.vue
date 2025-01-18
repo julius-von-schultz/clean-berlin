@@ -2,8 +2,11 @@
   <button
     :class="[
       'button',
-      { 'button--primary': props.variant === 'primary' },
-      { 'button--secondary': props.variant === 'secondary' },
+      backgroundColorClass,
+      textColorClass,
+      borderColorClass,
+      { 'button--border': borderColorClass },
+      { 'button--shadow': props.hasShadow },
       { 'button--small': props.isSmall },
     ]"
   >
@@ -24,39 +27,120 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  variant: {
-    type: String,
-    default: 'primary',
-  },
   icon: {
     type: String,
     default: 'arrow_forward',
   },
+  backgroundColor: {
+    type: String,
+    default: 'green',
+    validator: (val) => ['green', 'white'].includes(val),
+  },
+  borderColor: {
+    type: String,
+    default: 'none',
+    validator: (val) => ['none', 'green', 'green-darker', 'green-darker-smooth'].includes(val),
+  },
+  textColor: {
+    type: String,
+    default: 'white',
+    validator: (val) => ['white', 'green', 'green-darker', 'green-darker-smooth'].includes(val),
+  },
+  hasShadow: {
+    type: Boolean,
+    default: false,
+  },
+})
+
+const { backgroundColor, textColor, borderColor } = toRefs(props)
+
+const backgroundColorClass = computed(() => {
+  switch (backgroundColor.value) {
+    case 'white':
+      return 'button--background-white'
+    default:
+      return 'button--background-green'
+  }
+})
+
+const textColorClass = computed(() => {
+  switch (textColor.value) {
+    case 'green':
+      return 'button--text-green'
+    case 'green-darker':
+      return 'button--text-green-darker'
+    case 'green-darker-smooth':
+      return 'button--text-green-darker-smooth'
+    default:
+      return 'button--text-white'
+  }
+})
+
+const borderColorClass = computed(() => {
+  switch (borderColor.value) {
+    case 'green':
+      return 'button--border-green'
+    case 'green-darker':
+      return 'button--border-green-darker'
+    case 'green-darker-smooth':
+      return 'button--border-green-darker-smooth'
+    default:
+      return undefined
+  }
 })
 </script>
 
 <style lang="scss">
 .button {
   @apply flex;
-  align-items: center;
-  justify-content: space-between;
-  @apply font-semibold;
-  @apply p-4;
+  @apply items-center justify-between;
   @apply w-full;
-  @apply h-12;
+  @apply font-semibold;
+  @apply p-4 h-12;
   @apply rounded-lg;
 
-  &--primary {
-    @apply bg-cb-green-darker;
-    @apply text-cb-white;
+  &--shadow {
     @apply shadow-button;
   }
 
-  &--secondary {
+  &--background-green {
+    @apply bg-cb-green-darker;
+  }
+
+  &--background-white {
+    @apply bg-cb-white;
+  }
+
+  &--border {
     border-width: 2px;
-    @apply text-cb-green;
+  }
+
+  &--border-green {
     @apply border-cb-green;
-    @apply shadow-button;
+  }
+
+  &--border-green-darker {
+    @apply border-cb-green-darker;
+  }
+
+  &--border-green-darker-smooth {
+    @apply border-cb-green-darker-smooth;
+  }
+
+  &--text-white {
+    @apply text-cb-white;
+  }
+
+  &--text-green {
+    @apply text-cb-green;
+  }
+
+  &--text-green-darker {
+    @apply text-cb-green-darker;
+  }
+
+  &--text-green-darker-smooth {
+    @apply text-cb-green-darker-smooth;
   }
 
   &--small {

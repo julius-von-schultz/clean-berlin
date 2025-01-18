@@ -2,6 +2,8 @@
   <Transition name="modal-grow">
     <div v-if="isOpen" class="sorting-modal">
       <DateRangePicker />
+      <TimeRangePicker />
+      <SortingButtonBar class="sorting-modal__buttons" />
     </div>
   </Transition>
 </template>
@@ -17,7 +19,15 @@ defineProps({
 
 <style scoped>
 .sorting-modal {
-  @apply block;
+  @apply flex flex-col;
+  @apply gap-y-7;
+
+  &__buttons {
+    @screen md {
+      @apply flex flex-row;
+      @apply gap-x-4;
+    }
+  }
 }
 
 .modal-grow-enter-active {

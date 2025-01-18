@@ -8,7 +8,23 @@
     "searchPlaceholder": "Suche Event, Bezirk, Begriff, Zeit, ..."
   },
   "sorting": {
-    "from": "Vom",
-    "to": "bis zum"
+    "sortButtonStart": "Sortiere nach...",
+    "sortButtonCancel": "Abbrechen",
+    "date": {
+      "from": "Vom",
+      "until": "bis zum",
+      "buttonAsc": "Frühestestes Datum zuerst",
+      "buttonDsc": "Spätestes Datum zuerst"
+    },
+    "time": {
+      "from": "Von",
+      "until": "bis",
+      "buttonAsc": "Frühesteste Zeit zuerst",
+      "buttonDsc": "Spätestes Zeit zuerst"
+    },
+    "createdAt": {
+      "buttonAsc": "Neueste Events zuerst",
+      "buttonDsc": "Älteste Events zuerst"
+    }
   }
 }

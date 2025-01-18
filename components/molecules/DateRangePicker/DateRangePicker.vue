@@ -1,11 +1,12 @@
 <template>
-  <div class="date-range-picker">
-    <!-- <input id="birthday" type="date" name="birthday" :value="currentDate"> -->
-    <span>{{ $t('sorting.from') }}</span>
-    <InputField input-type="date" :model-value="currentDate" />
-    <span>{{ $t('sorting.until') }}</span>
-    <InputField input-type="date" :model-value="targetDate" />
-  </div>
+  <GenericRangePicker
+    input-type="date"
+    :from-label="$t('sorting.date.from')"
+    :from-value="currentDate"
+    :to-label="$t('sorting.date.until')"
+    :to-value="targetDate"
+    icon="date_range"
+  />
 </template>
 
 <script setup lang="ts">
@@ -21,13 +22,3 @@ const targetDate = computed(() => {
   return formatDate(date)
 })
 </script>
-
-<style scoped>
-.date-range-picker {
-  @apply flex;
-  @apply items-center;
-  @apply gap-x-4;
-  white-space: nowrap;
-  @apply text-cb-grey-5;
-}
-</style>

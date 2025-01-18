@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <ContentWrapper width="narrow" class="index-page">
+  <div class="index-page">
+    <ContentWrapper width="narrow" class="index-page__wrapper">
       <Headline headline="Events" class="index-page__headline" />
       <div class="index-page__search-and-sort">
         <SearchBar
@@ -9,8 +9,9 @@
         />
         <CbButton
           class="index-page__sort-button"
-          :icon="modalIsOpen ? 'expand_less' : 'expand_more'"
-          label="Sortiere nach..."
+          :icon="modalIsOpen ? 'close' : 'expand_more'"
+          has-shadow
+          :label="modalIsOpen ? $t('sorting.sortButtonCancel'): $t('sorting.sortButtonStart')"
           @click="openOrCloseModal"
         />
       </div>
@@ -32,6 +33,10 @@ const openOrCloseModal = () => {
 
 <style lang="scss">
 .index-page {
+  &__wrapper {
+    @apply mb-8;
+  }
+
   &__headline {
     @apply pb-5;
   }
@@ -54,7 +59,7 @@ const openOrCloseModal = () => {
   }
 
   &__sorting-modal {
-    @apply mt-[30px];
+    @apply mt-8;
   }
 }
 </style>

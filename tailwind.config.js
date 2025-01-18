@@ -28,6 +28,7 @@ export default {
     colors: {
       'cb-green': '#76B900',
       'cb-green-darker': '#5A8F00',
+      'cb-green-darker-smooth': '#5A8F00AA',
       'cb-green-lighter': '#8EE000',
       'cb-orange': '#F45D01',
       'cb-white': '#FFFFFF',

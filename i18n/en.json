@@ -8,7 +8,23 @@
     "searchPlaceholder": "Search event, district, term, time ..."
   },
   "sorting": {
-    "from": "From",
-    "until": "until"
+    "sortButtonStart": "Sort by...",
+    "sortButtonCancel": "Cancel",
+    "date": {
+      "from": "From",
+      "until": "until",
+      "buttonAsc": "Earliest date first",
+      "buttonDsc": "Latest date first"
+    },
+    "time": {
+      "from": "From",
+      "until": "until",
+      "buttonAsc": "Earliest time first",
+      "buttonDsc": "Latest time first"
+    },
+    "createdAt": {
+      "buttonAsc": "Newest events first",
+      "buttonDsc": "Oldest Events first"
+    }
   }
 }
