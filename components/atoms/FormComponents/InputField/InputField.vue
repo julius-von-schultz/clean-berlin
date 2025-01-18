@@ -169,7 +169,6 @@ export default defineComponent({
   &__icon {
     @apply absolute;
     @apply top-1/2 right-4;
-    @apply cursor-pointer;
     @apply text-cb-grey-6;
     transform: translateY(-50%);
 
@@ -185,6 +184,7 @@ export default defineComponent({
     @apply px-4;
     @apply py-3;
     @apply rounded-xl;
+    @apply cursor-text;
 
     // fix for mobile safari to show box-shadow
     appearance: none;
