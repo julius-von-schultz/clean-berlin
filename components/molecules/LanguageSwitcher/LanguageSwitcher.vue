@@ -7,13 +7,13 @@
       <Icon :size="size" icon="language" />
     </div>
     <div v-if="isActive" class="language-switcher__content">
-      <ul>
+      <ul class="language-switcher__list">
         <NuxtLink
           v-for="lang in locales"
           :key="lang.code"
           :to="switchLocale(lang.code)"
         >
-          <li>{{ lang.name }}</li>
+          <li class="language-switcher__option">{{ lang.name }}</li>
         </NuxtLink>
       </ul>
     </div>
@@ -53,6 +53,8 @@ onLanguageSwitched('switcher', () => {
     @apply flex flex-row;
     @apply gap-x-3;
     @apply cursor-pointer;
+    @apply p-3;
+    @apply border-2 rounded-xl;
 
     @screen lg {
       @apply text-cb-white;
@@ -66,14 +68,14 @@ onLanguageSwitched('switcher', () => {
   &__content {
     @apply absolute;
     width: 11rem;
-    padding-top: 1rem;
+    @apply pt-3;
 
     @screen lg {
       width: 12.75rem;
     }
   }
 
-  &__content ul {
+  &__list {
     @apply overflow-hidden;
     @apply h-full;
     @apply p-0;
@@ -90,12 +92,7 @@ onLanguageSwitched('switcher', () => {
     }
   }
 
-  &__content li:hover {
-    @apply bg-cb-green;
-    @apply text-cb-white;
-  }
-
-  &__content li {
+  &__option {
     @apply pl-2.5;
     @apply text-sm;
     @apply leading-5;
@@ -104,6 +101,11 @@ onLanguageSwitched('switcher', () => {
 
     @screen lg {
       @apply text-base;
+    }
+
+    &:hover {
+      @apply bg-cb-green;
+      @apply text-cb-white;
     }
   }
 }

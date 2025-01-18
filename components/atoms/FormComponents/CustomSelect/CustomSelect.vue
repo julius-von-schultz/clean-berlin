@@ -125,11 +125,11 @@ onClickOutside(target, () => (isOpen.value = false))
     transition: background-color 0.2s;
 
     &:hover {
-      @apply bg-cb-green-darker/40;
+      @apply bg-cb-green;
+      @apply text-cb-white;
     }
 
     &--selected {
-      @apply font-bold;
       @apply bg-cb-green-darker/20;
     }
   }
