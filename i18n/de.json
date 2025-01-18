@@ -16,14 +16,17 @@
       "until": "bis zum",
       "placeholderSorting": "Nach Datum sortieren...",
       "buttonAsc": "Frühestestes Datum zuerst...",
-      "buttonDsc": "Spätestes Datum zuerst..."
+      "buttonDsc": "Spätestes Datum zuerst...",
+      "validMessage": "Das eingegebene Datum ist nicht gültig.",
+      "pastMessage": "Das eingegebene Datum liegt in der Vergangenheit."
     },
     "time": {
       "from": "Von",
       "until": "bis",
       "placeholderSorting": "Nach Zeit sortieren...",
       "buttonAsc": "Frühesteste Zeit zuerst...",
-      "buttonDsc": "Späteste Zeit zuerst..."
+      "buttonDsc": "Späteste Zeit zuerst...",
+      "validMessage": "Die eingegebene Uhrzeit ist nicht gültig."
     },
     "createdAt": {
       "placeholderSorting": "Nach Aktualität sortieren...",

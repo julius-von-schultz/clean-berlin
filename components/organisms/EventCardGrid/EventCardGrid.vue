@@ -1,7 +1,7 @@
 <template>
   <div class="event-card-grid">
     <EventCard
-      v-for="(event, index) in events.events"
+      v-for="(event, index) in filteredAndSortedEvents"
       :key="index"
       :event="event"
     />
@@ -11,8 +11,10 @@
 <script setup lang="ts">
 import EventCard from '~/components/molecules/EventCard/EventCard.vue'
 import { useEventsStore } from '~/stores/events/events.js'
+import { storeToRefs } from 'pinia'
 
-const events = useEventsStore()
+const eventStore = useEventsStore()
+const { filteredAndSortedEvents } = storeToRefs(eventStore)
 </script>
 
 <style lang="scss">

@@ -20,7 +20,7 @@ const props = defineProps({
   link: {
     type: String,
     default: '/',
-  }
+  },
 })
 </script>
 

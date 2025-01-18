@@ -12,7 +12,7 @@
       type="text"
       class="search-bar__input"
       :placeholder="placeholder"
-      @keypress.enter="$emit('submit', internalValue)"
+      @keypress.enter="submit()"
       @focus="$emit('focus', true)"
       @input="updateValue"
     />
@@ -22,6 +22,8 @@
 <script>
 import { defineComponent, ref, toRefs, watch } from 'vue'
 import { useSanitizer } from '~/composables/sanitizer/useSanitizer.js'
+import { useEventsStore } from '~/stores/events/events.js'
+import { storeToRefs } from 'pinia'
 
 export default defineComponent({
   name: 'SearchBar',
@@ -86,6 +88,15 @@ export default defineComponent({
     const { modelValue: propsValue } = toRefs(props)
     const internalValue = ref(props.modelValue)
 
+    const eventStore = useEventsStore()
+    const { searchTerm } = storeToRefs(eventStore)
+
+    const submit = () => {
+      console.log('*** exec', internalValue.value)
+      searchTerm.value = internalValue.value
+      emit('submit', internalValue)
+    }
+
     const updateValue = () => {
       emit('update:modelValue', sanitizer.clear(internalValue.value))
     }
@@ -102,6 +113,7 @@ export default defineComponent({
 
       // Actions
       updateValue,
+      submit,
     }
   },
 })

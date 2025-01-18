@@ -16,14 +16,17 @@
       "until": "until",
       "placeholderSorting": "Sort by date...",
       "buttonAsc": "Earliest date first...",
-      "buttonDsc": "Latest date first..."
+      "buttonDsc": "Latest date first...",
+      "validMessage": "The date entered is not valid.",
+      "pastMessage": "The date entered is in the past."
     },
     "time": {
       "from": "From",
       "until": "until",
       "placeholderSorting": "Sort by time...",
       "buttonAsc": "Earliest time first...",
-      "buttonDsc": "Latest time first..."
+      "buttonDsc": "Latest time first...",
+      "validMessage": "The time entered is not valid."
     },
     "createdAt": {
       "placeholderSorting": "Sort by recency...",

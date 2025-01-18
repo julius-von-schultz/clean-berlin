@@ -6,6 +6,7 @@
       :input-type="inputType"
       :model-value="fromValue"
       :icon="icon"
+      :rules="rules"
     />
     <span class="range-picker__label">{{ toLabel }}</span>
     <InputField
@@ -13,6 +14,7 @@
       :input-type="inputType"
       :model-value="toValue"
       :icon="icon"
+      :rules="rules"
     />
   </div>
 </template>
@@ -42,6 +44,10 @@ defineProps({
   icon: {
     type: String,
     default: undefined,
+  },
+  rules: {
+    type: Object,
+    default: () => ({}),
   },
 })
 </script>
