@@ -12,6 +12,7 @@
         :class="{
           'input__element--icon': icon,
           'input__element--error': !!validation.getError(),
+          'input__element--text-dark': internalValue,
         }"
         :placeholder="placeholder"
         @keypress.enter="$emit('submit', internalValue)"
@@ -187,6 +188,10 @@ export default defineComponent({
 
     // fix for mobile safari to show box-shadow
     appearance: none;
+
+    &--text-dark {
+      @apply text-cb-grey-10;
+    }
 
     &:focus {
       @apply border-cb-grey-11;

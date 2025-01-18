@@ -82,7 +82,6 @@ onLanguageSwitched('switcher', () => {
     @apply relative;
     @apply border-2;
     @apply border-cb-grey-6;
-    @apply shadow-black-15;
     right: 4.5rem;
 
     @screen lg {

@@ -1,49 +1,42 @@
 <template>
   <div class="sorting-bar">
-    <CbButton
-      :label="$t('sorting.date.buttonAsc')"
-      background-color="white"
-      border-color="green-darker-smooth"
-      text-color="green-darker-smooth"
-      :has-shadow="true"
-      :icon="dateSortingisOpen ? 'expand_less' : 'expand_more'"
-      @click="openOrCloseDateSorting"
+    <CustomSelect
+      v-model="selectedDateOption"
+      :options="selectDateOptions"
+      :placeholder="t('sorting.date.placeholderSorting')"
     />
-    <CbButton
-      :label="$t('sorting.time.buttonAsc')"
-      background-color="white"
-      border-color="green-darker-smooth"
-      text-color="green-darker-smooth"
-      :has-shadow="true"
-      :icon="timeSortingisOpen ? 'expand_less' : 'expand_more'"
-      @click="openOrCloseTimeSorting"
+    <CustomSelect
+      v-model="selectedTimeOption"
+      :options="selectTimeOptions"
+      :placeholder="t('sorting.time.placeholderSorting')"
     />
-    <CbButton
-      :label="$t('sorting.createdAt.buttonAsc')"
-      background-color="white"
-      border-color="green-darker-smooth"
-      text-color="green-darker-smooth"
-      :has-shadow="true"
-      :icon="createdAtSortingisOpen ? 'expand_less' : 'expand_more'"
-      @click="openOrCloseCreatedAtSorting"
+    <CustomSelect
+      v-model="selectedCreatedAtOption"
+      :options="selectCreatedAtOptions"
+      :placeholder="t('sorting.createdAt.placeholderSorting')"
     />
   </div>
 </template>
 
 <script setup>
-const dateSortingisOpen = ref(false)
-const timeSortingisOpen = ref(false)
-const createdAtSortingisOpen = ref(false)
+const { t } = useI18n()
 
-const openOrCloseDateSorting = () => {
-  dateSortingisOpen.value = !dateSortingisOpen.value
-}
+const selectDateOptions = [
+  { value: 'date_asc', label: t('sorting.date.buttonAsc') },
+  { value: 'date_desc', label: t('sorting.date.buttonDsc') },
+]
 
-const openOrCloseTimeSorting = () => {
-  dateSortingisOpen.value = !dateSortingisOpen.value
-}
+const selectTimeOptions = [
+  { value: 'time_asc', label: t('sorting.time.buttonAsc') },
+  { value: 'time_desc', label: t('sorting.time.buttonDsc') },
+]
 
-const openOrCloseCreatedAtSorting = () => {
-  dateSortingisOpen.value = !dateSortingisOpen.value
-}
+const selectCreatedAtOptions = [
+  { value: 'createdAt_asc', label: t('sorting.createdAt.buttonAsc') },
+  { value: 'createdAt_desc', label: t('sorting.createdAt.buttonDsc') },
+]
+
+const selectedDateOption = ref(null)
+const selectedTimeOption = ref(null)
+const selectedCreatedAtOption = ref('createdAt_asc')
 </script>

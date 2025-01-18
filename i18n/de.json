@@ -13,18 +13,21 @@
     "date": {
       "from": "Vom",
       "until": "bis zum",
-      "buttonAsc": "Frühestestes Datum zuerst",
-      "buttonDsc": "Spätestes Datum zuerst"
+      "placeholderSorting": "Nach Datum sortieren...",
+      "buttonAsc": "Frühestestes Datum zuerst...",
+      "buttonDsc": "Spätestes Datum zuerst..."
     },
     "time": {
       "from": "Von",
       "until": "bis",
-      "buttonAsc": "Frühesteste Zeit zuerst",
-      "buttonDsc": "Spätestes Zeit zuerst"
+      "placeholderSorting": "Nach Zeit sortieren...",
+      "buttonAsc": "Frühesteste Zeit zuerst...",
+      "buttonDsc": "Späteste Zeit zuerst..."
     },
     "createdAt": {
-      "buttonAsc": "Neueste Events zuerst",
-      "buttonDsc": "Älteste Events zuerst"
+      "placeholderSorting": "Nach Aktualität sortieren...",
+      "buttonAsc": "Neueste Events zuerst...",
+      "buttonDsc": "Älteste Events zuerst..."
     }
   }
 }

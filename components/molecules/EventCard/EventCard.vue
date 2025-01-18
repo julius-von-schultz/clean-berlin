@@ -52,6 +52,7 @@ defineProps({
   @apply h-[320px];
   @apply w-[290px];
   position: relative;
+  box-shadow: 0 40px 40px -40px #ccc;
 
   &__image {
     @apply h-[180px];

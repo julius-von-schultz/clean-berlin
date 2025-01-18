@@ -126,7 +126,7 @@ const borderColorClass = computed(() => {
   }
 
   &--border-green-darker-smooth {
-    @apply border-cb-green-darker-smooth;
+    @apply border-cb-green-darker/50;
   }
 
   &--text-white {
@@ -142,7 +142,7 @@ const borderColorClass = computed(() => {
   }
 
   &--text-green-darker-smooth {
-    @apply text-cb-green-darker-smooth;
+    @apply text-cb-green-darker/75;
   }
 
   &--small {
