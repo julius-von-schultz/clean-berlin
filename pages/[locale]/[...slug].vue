@@ -11,7 +11,11 @@
           class="index-page__sort-button"
           :icon="modalIsOpen ? 'close' : 'expand_more'"
           has-shadow
-          :label="modalIsOpen ? $t('sorting.sortButtonCancel'): $t('sorting.sortButtonStart')"
+          :label="
+            modalIsOpen
+              ? $t('sorting.sortButtonCancel')
+              : $t('sorting.sortButtonStart')
+          "
           @click="openOrCloseModal"
         />
       </div>

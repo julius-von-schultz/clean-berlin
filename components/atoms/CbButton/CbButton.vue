@@ -39,12 +39,14 @@ const props = defineProps({
   borderColor: {
     type: String,
     default: 'none',
-    validator: (val) => ['none', 'green', 'green-darker', 'green-darker-smooth'].includes(val),
+    validator: (val) =>
+      ['none', 'green', 'green-darker', 'green-darker-smooth'].includes(val),
   },
   textColor: {
     type: String,
     default: 'white',
-    validator: (val) => ['white', 'green', 'green-darker', 'green-darker-smooth'].includes(val),
+    validator: (val) =>
+      ['white', 'green', 'green-darker', 'green-darker-smooth'].includes(val),
   },
   hasShadow: {
     type: Boolean,

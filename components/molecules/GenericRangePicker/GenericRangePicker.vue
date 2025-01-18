@@ -42,7 +42,7 @@ defineProps({
   icon: {
     type: String,
     default: undefined,
-  }
+  },
 })
 </script>
 
