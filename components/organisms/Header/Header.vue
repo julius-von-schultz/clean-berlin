@@ -9,8 +9,8 @@
       <LanguageSwitcher class="header__language-switcher" />
       <MainNavigation class="header__main-navigation" />
       <CbButton
-        label="Login"
-        variant="secondary"
+        :label="t('header.loginButton')"
+        background-color="green"
         class="header__login-button"
       />
     </ContentWrapper>

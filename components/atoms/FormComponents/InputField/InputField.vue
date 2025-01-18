@@ -184,7 +184,7 @@ export default defineComponent({
     @apply shadow-border-grey-80;
     @apply px-4;
     @apply py-3;
-    @apply rounded-lg;
+    @apply rounded-xl;
 
     // fix for mobile safari to show box-shadow
     appearance: none;

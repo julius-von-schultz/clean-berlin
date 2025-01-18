@@ -96,10 +96,11 @@ onClickOutside(target, () => (isOpen.value = false))
   &__selected {
     @apply flex;
     @apply justify-between items-center;
-    @apply p-[10px];
+    @apply px-4;
+    @apply py-3;
     border: 2px solid;
     @apply border-cb-green-darker/75;
-    @apply rounded-lg;
+    @apply rounded-xl;
     @apply bg-cb-white;
     @apply cursor-pointer;
   }
@@ -112,14 +113,15 @@ onClickOutside(target, () => (isOpen.value = false))
     border: 2px solid;
     @apply border-cb-green-darker/75;
     @apply bg-cb-white;
-    @apply rounded-lg;
+    @apply rounded-xl;
     @apply mt-1;
     z-index: 10;
   }
 
   &__option {
     @apply cursor-pointer;
-    @apply p-[10px];
+    @apply px-4;
+    @apply py-3;
     transition: background-color 0.2s;
 
     &:hover {

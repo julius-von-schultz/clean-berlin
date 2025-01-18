@@ -116,7 +116,7 @@ defineProps({
     @apply flex;
     @apply items-center;
     @apply gap-x-2;
-    @apply rounded-lg;
+    @apply rounded-xl;
     @apply p-2;
     @apply border-2 border-cb-white;
   }

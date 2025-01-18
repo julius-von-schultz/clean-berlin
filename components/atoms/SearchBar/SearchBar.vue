@@ -122,7 +122,7 @@ export default defineComponent({
   &__input {
     @apply w-full;
     @apply pr-4 pl-[54px] py-3;
-    @apply rounded-lg;
+    @apply rounded-xl;
     @apply text-cb-grey-11;
     @apply bg-cb-grey-1;
 

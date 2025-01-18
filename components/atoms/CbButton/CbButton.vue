@@ -99,7 +99,7 @@ const borderColorClass = computed(() => {
   @apply w-full;
   @apply font-semibold;
   @apply p-4 h-12;
-  @apply rounded-lg;
+  @apply rounded-xl;
 
   &--shadow {
     @apply shadow-button;

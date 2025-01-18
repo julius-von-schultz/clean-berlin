@@ -1,5 +1,6 @@
 {
   "header": {
+    "loginButton": "Einloggen",
     "imageLogoAlt": "Logo",
     "languageSwitcherLabel": "Sprache",
     "searchPlaceholder": "Suche nach Datum, Ort oder Schlagwort …"
