@@ -5,16 +5,17 @@
       :key="entry.index"
       :label="entry.label"
       :icon="entry.icon"
+      :link="entry.link"
     />
   </div>
 </template>
 
 <script setup lang="ts">
 const entries = [
-  { index: 0, label: 'Events', icon: 'list' },
-  { index: 1, label: 'Favoriten', icon: 'star' },
-  { index: 1, label: 'Karte', icon: 'map' },
-  { index: 1, label: 'Kalender', icon: 'event' },
+  { index: 0, label: 'Events', icon: 'list', link: '/events' },
+  { index: 1, label: 'Favoriten', icon: 'star', link: '/favorites' },
+  { index: 2, label: 'Karte', icon: 'map', link: '/map' },
+  { index: 3, label: 'Kalender', icon: 'event', link: '/calender' },
 ]
 </script>
 

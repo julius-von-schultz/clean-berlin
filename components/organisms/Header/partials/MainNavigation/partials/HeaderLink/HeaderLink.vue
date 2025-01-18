@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink class="header-link">
+  <NuxtLink class="header-link" :to="props.link">
     <span class="header-link--label">{{ props.label }}</span>
     <Icon :icon="props.icon" class="header-link--logo" />
   </NuxtLink>
@@ -17,6 +17,10 @@ const props = defineProps({
     default: '',
     required: true,
   },
+  link: {
+    type: String,
+    default: '/',
+  }
 })
 </script>
 
@@ -24,9 +28,8 @@ const props = defineProps({
 .header-link {
   @apply flex;
   @apply w-[142px];
-  @apply justify-between;
+  @apply justify-between items-center;
   @apply text-[20px] font-semibold;
-  align-items: center;
 
   &:hover {
     @apply cursor-pointer;
