@@ -6,5 +6,9 @@
   },
   "indexPage": {
     "searchPlaceholder": "Search event, district, term, time ..."
+  },
+  "sorting": {
+    "from": "From",
+    "until": "until"
   }
 }

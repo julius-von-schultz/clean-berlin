@@ -1,6 +1,10 @@
 <template>
   <div class="event-card-grid">
-    <EventCard v-for="(event, index) in events.events" :key="index" :event="event" />
+    <EventCard
+      v-for="(event, index) in events.events"
+      :key="index"
+      :event="event"
+    />
   </div>
 </template>
 

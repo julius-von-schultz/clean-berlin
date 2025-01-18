@@ -6,5 +6,9 @@
   },
   "indexPage": {
     "searchPlaceholder": "Suche Event, Bezirk, Begriff, Zeit, ..."
+  },
+  "sorting": {
+    "from": "Vom",
+    "to": "bis zum"
   }
 }

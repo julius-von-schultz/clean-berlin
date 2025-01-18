@@ -10,7 +10,7 @@
     <span>
       {{ props.label }}
     </span>
-    <Icon icon="arrow_forward" />
+    <Icon :icon="icon" />
   </button>
 </template>
 
@@ -27,6 +27,10 @@ const props = defineProps({
   variant: {
     type: String,
     default: 'primary',
+  },
+  icon: {
+    type: String,
+    default: 'arrow_forward',
   },
 })
 </script>

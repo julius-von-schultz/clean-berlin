@@ -2,27 +2,31 @@
   <div>
     <ContentWrapper width="narrow" class="index-page">
       <Headline headline="Events" class="index-page__headline" />
-      <div class="index-page__search-and-sort-container">
+      <div class="index-page__search-and-sort">
         <SearchBar
           :placeholder="$t('header.searchPlaceholder')"
           class="index-page__search-bar"
         />
-        <CbButton class="index-page__sort-button" label="Sortiere nach..." />
+        <CbButton
+          class="index-page__sort-button"
+          :icon="modalIsOpen ? 'expand_less' : 'expand_more'"
+          label="Sortiere nach..."
+          @click="openOrCloseModal"
+        />
       </div>
+      <EventOverviewSortingModal
+        :is-open="modalIsOpen"
+        class="index-page__sorting-modal"
+      />
     </ContentWrapper>
     <EventCardGrid class="index-page__card-grid" />
   </div>
 </template>
 
-<script lang="ts">
-export default {
-  setup() {
-    const { t } = useI18n()
-
-    return {
-      t,
-    }
-  },
+<script lang="ts" setup>
+const modalIsOpen = ref(false)
+const openOrCloseModal = () => {
+  modalIsOpen.value = !modalIsOpen.value
 }
 </script>
 
@@ -36,7 +40,7 @@ export default {
     @apply mt-5;
   }
 
-  &__search-and-sort-container {
+  &__search-and-sort {
     @apply flex;
     @apply gap-x-4;
   }
@@ -47,6 +51,10 @@ export default {
 
   &__sort-button {
     @apply w-[30%];
+  }
+
+  &__sorting-modal {
+    @apply mt-[30px];
   }
 }
 </style>

@@ -47,7 +47,7 @@ export default defineComponent({
      * @model
      */
     modelValue: {
-      type: [String, Number],
+      type: [String, Number, Date],
       default: undefined,
     },
     /**

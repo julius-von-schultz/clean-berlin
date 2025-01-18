@@ -5,7 +5,8 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 1,
       title: 'Park Cleanup',
-      imageUrl: 'https://hsg-berlin.de/fileadmin/_processed_/a/b/csm_Kehrenbu__rger_2_9f3039378c.png',
+      imageUrl:
+        'https://hsg-berlin.de/fileadmin/_processed_/a/b/csm_Kehrenbu__rger_2_9f3039378c.png',
       description:
         'Gemeinsames Aufräumen des Volksparks. Handschuhe und Müllsäcke werden gestellt.',
       date: '12.02.2025',
@@ -22,7 +23,8 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 2,
       title: 'Spreeufer säubern',
-      imageUrl: 'https://www.bsr.de/assets/images/reinigung_kehrpaket_2784x1856_3x2_rdax_1500x1000_85s.JPG',
+      imageUrl:
+        'https://www.bsr.de/assets/images/reinigung_kehrpaket_2784x1856_3x2_rdax_1500x1000_85s.JPG',
       description:
         'Müllsammelaktion entlang der Spree. Bringt bitte wetterfeste Kleidung mit.',
       date: '15.02.2025',
@@ -39,7 +41,8 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 3,
       title: 'Spielplatz sauber',
-      imageUrl: 'https://img.sparknews.funkemedien.de/233352833/233352833_1631886811_v16_9_1200.jpeg',
+      imageUrl:
+        'https://img.sparknews.funkemedien.de/233352833/233352833_1631886811_v16_9_1200.jpeg',
       description: 'Wir reinigen und verschönern den Spielplatz für Kinder.',
       date: '18.01.2025',
       district: 'Prenzlauer Berg',
@@ -55,7 +58,8 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 4,
       title: 'Neukölln Cleanup',
-      imageUrl: 'https://worldcleanupday.de/wp-content/uploads/2024/09/KS_Umweltkalender8.jpg',
+      imageUrl:
+        'https://worldcleanupday.de/wp-content/uploads/2024/09/KS_Umweltkalender8.jpg',
       description: 'Helft uns, die Straßen von Neukölln müllfrei zu machen.',
       date: '20.02.2025',
       district: 'Neukölln',
@@ -71,7 +75,8 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 5,
       title: 'Tempelhofer Feld',
-      imageUrl: 'https://www.umweltkalender-berlin.de/picture/w678h509/32885_pexels_lara_jameson_9324307.jpg',
+      imageUrl:
+        'https://www.umweltkalender-berlin.de/picture/w678h509/32885_pexels_lara_jameson_9324307.jpg',
       description:
         'Aufräumen des Tempelhofer Felds. Treffpunkt am Haupteingang.',
       date: '22.01.2025',
@@ -88,7 +93,8 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 6,
       title: 'Kiez Cleanup',
-      imageUrl: 'https://weddingweiser.de/wp-content/uploads/2024/09/Gruppenbild-horizontal-1600x1067.jpg',
+      imageUrl:
+        'https://weddingweiser.de/wp-content/uploads/2024/09/Gruppenbild-horizontal-1600x1067.jpg',
       description: 'Wir machen den Kiez um den Boxhagener Platz sauber.',
       date: '25.02.2025',
       district: 'Friedrichshain',
@@ -104,7 +110,8 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 7,
       title: 'Flussufer reinigen',
-      imageUrl: 'https://www.berlin.de/meingruenes-berlin/_assets/zusammen-sind-wir-park/world-cleanup-day-2022/world_cleanup_day-45541.jpg',
+      imageUrl:
+        'https://www.berlin.de/meingruenes-berlin/_assets/zusammen-sind-wir-park/world-cleanup-day-2022/world_cleanup_day-45541.jpg',
       description:
         'Müllsammlung am Landwehrkanal. Unterstütze uns bei der Aktion.',
       date: '28.02.2025',
@@ -121,7 +128,8 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 8,
       title: 'Park Cleanup West',
-      imageUrl: 'https://pestalozzi-schule-berlin.de/uploads/2023/11/IMG_8690-scaled.jpg',
+      imageUrl:
+        'https://pestalozzi-schule-berlin.de/uploads/2023/11/IMG_8690-scaled.jpg',
       description: 'Reinigung des Tiergartens. Treffpunkt: Café am Neuen See.',
       date: '30.01.2025',
       district: 'Tiergarten',
@@ -137,7 +145,8 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 9,
       title: 'Havelufer Aktion',
-      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgq5jrAHj3RwpiQmrl7I99MzbMEt9VhSY4jw&s',
+      imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgq5jrAHj3RwpiQmrl7I99MzbMEt9VhSY4jw&s',
       description: 'Gemeinsame Müllaktion am Havelufer in Spandau.',
       date: '02.02.2025',
       district: 'Spandau',
@@ -153,7 +162,8 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 10,
       title: 'S-Bahnhof sauber',
-      imageUrl: 'https://www.roa.de/wp-content/uploads/2022/04/muell-sammeln-berliner-parks.jpg',
+      imageUrl:
+        'https://www.roa.de/wp-content/uploads/2022/04/muell-sammeln-berliner-parks.jpg',
       description: 'Reinigung rund um den S-Bahnhof Ostkreuz.',
       date: '04.02.2025',
       district: 'Friedrichshain',
@@ -169,7 +179,8 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 11,
       title: 'Park Cleanup',
-      imageUrl: 'https://img.welt.de/img/reise/staedtereisen/mobile199240564/6887932837-coriginal-w2000/Berlin-Touristen-sammeln-Muell-bei-Stadtfuehrung.jpg',
+      imageUrl:
+        'https://img.welt.de/img/reise/staedtereisen/mobile199240564/6887932837-coriginal-w2000/Berlin-Touristen-sammeln-Muell-bei-Stadtfuehrung.jpg',
       description:
         'Gemeinsam reinigen wir den beliebten Volkspark Friedrichshain.',
       date: '10.01.2025',
@@ -186,7 +197,8 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 12,
       title: 'Spree Cleanup',
-      imageUrl: 'https://www.berlin.de/imgscaler/u16Azvn7Kfq7BLWn7v3lAPox3rp4hDlJGlaR_SeXFyU/ropen/L3N5czExLXByb2QvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL2NpdHktd2VzdC1ibG9nLzIwMjIvNjNkZjJkMzctYzE0NC00ZTRkLThkOGQtM2NlYTMxNWNjNWI0LmpwZw.jpg?ts=1665484530',
+      imageUrl:
+        'https://www.berlin.de/imgscaler/u16Azvn7Kfq7BLWn7v3lAPox3rp4hDlJGlaR_SeXFyU/ropen/L3N5czExLXByb2QvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL2NpdHktd2VzdC1ibG9nLzIwMjIvNjNkZjJkMzctYzE0NC00ZTRkLThkOGQtM2NlYTMxNWNjNWI0LmpwZw.jpg?ts=1665484530',
       description: 'Wir sammeln Müll entlang der Spree in Kreuzberg.',
       date: '12.01.2025',
       district: 'Friedrichshain-Kreuzberg',
@@ -202,9 +214,9 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 13,
       title: 'Spielplatzaktion',
-      imageUrl: 'https://img.sparknews.funkemedien.de/239527361/239527361_1694616793_v16_9_1200.jpeg',
-      description:
-        'Wir machen den Spielplatz an der Warschauer Straße sauber.',
+      imageUrl:
+        'https://img.sparknews.funkemedien.de/239527361/239527361_1694616793_v16_9_1200.jpeg',
+      description: 'Wir machen den Spielplatz an der Warschauer Straße sauber.',
       date: '15.01.2025',
       district: 'Friedrichshain',
       participants: 10,
@@ -219,9 +231,9 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 14,
       title: 'Uferreinigung',
-      imageUrl: 'https://cleanupnetwork.com/wp-content/themes/yootheme/cache/07/cleanup-trepnick-network-07d62051.jpeg',
-      description:
-        'Aufräumaktion am Ufer des Landwehrkanals in Kreuzberg.',
+      imageUrl:
+        'https://cleanupnetwork.com/wp-content/themes/yootheme/cache/07/cleanup-trepnick-network-07d62051.jpeg',
+      description: 'Aufräumaktion am Ufer des Landwehrkanals in Kreuzberg.',
       date: '18.02.2025',
       district: 'Friedrichshain-Kreuzberg',
       participants: 20,
@@ -236,7 +248,8 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 15,
       title: 'Platz säubern',
-      imageUrl: 'https://www.kehrenbuerger.de/assets/pictures/Klimalauf_vorher_4MB_20580_rdax_960x720s.jpg',
+      imageUrl:
+        'https://www.kehrenbuerger.de/assets/pictures/Klimalauf_vorher_4MB_20580_rdax_960x720s.jpg',
       description: 'Helft uns, den Boxhagener Platz von Müll zu befreien.',
       date: '20.01.2025',
       district: 'Friedrichshain',
@@ -252,7 +265,8 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 16,
       title: 'Straßenreinigung',
-      imageUrl: 'https://berliner-zeitung.imgix.net/2024/03/19/ff43ebe6-b72a-4c6d-ad98-0f863216bf39.jpeg?w=1024&auto=format',
+      imageUrl:
+        'https://berliner-zeitung.imgix.net/2024/03/19/ff43ebe6-b72a-4c6d-ad98-0f863216bf39.jpeg?w=1024&auto=format',
       description: 'Gemeinsam säubern wir die Oranienstraße in Kreuzberg.',
       date: '22.01.2025',
       district: 'Friedrichshain-Kreuzberg',
@@ -268,7 +282,8 @@ export const useEventsStore = defineStore('events', () => {
     {
       id: 17,
       title: 'Wald Cleanup',
-      imageUrl: 'https://www.kehrenbuerger.de/assets/pictures/20211106_111449__1__17895_rdax_960x720s.jpg',
+      imageUrl:
+        'https://www.kehrenbuerger.de/assets/pictures/20211106_111449__1__17895_rdax_960x720s.jpg',
       description:
         'Aufräumaktion im Treptower Park für ein sauberes Naherholungsgebiet.',
       date: '25.01.2025',
