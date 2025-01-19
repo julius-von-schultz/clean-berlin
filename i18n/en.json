@@ -1,9 +1,13 @@
 {
   "header": {
-    "loginButton": "Einloggen",
+    "loginButton": "Login",
     "imageLogoAlt": "Logo",
     "languageSwitcherLabel": "Language",
-    "searchPlaceholder": "Search by date, location or keyword ..."
+    "searchPlaceholder": "Search by date, location or keyword ...",
+    "events": "Events",
+    "favorites": "Favorites",
+    "map": "Map",
+    "calendar": "Calendar"
   },
   "indexPage": {
     "searchPlaceholder": "Search event, district, term, time ..."

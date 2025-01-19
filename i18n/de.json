@@ -3,7 +3,11 @@
     "loginButton": "Einloggen",
     "imageLogoAlt": "Logo",
     "languageSwitcherLabel": "Sprache",
-    "searchPlaceholder": "Suche nach Datum, Ort oder Schlagwort …"
+    "searchPlaceholder": "Suche nach Datum, Ort oder Schlagwort …",
+    "events": "Events",
+    "favorites": "Favoriten",
+    "map": "Karte",
+    "calendar": "Kalender"
   },
   "indexPage": {
     "searchPlaceholder": "Suche Event, Bezirk, Begriff, Zeit, ..."

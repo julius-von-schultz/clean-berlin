@@ -31,7 +31,7 @@
         </div>
       </div>
     </div>
-    <div class="event-card__date">{{ event.date }}</div>
+    <div class="event-card__date">{{ $d(event.date, 'date') }}</div>
   </div>
 </template>
 
