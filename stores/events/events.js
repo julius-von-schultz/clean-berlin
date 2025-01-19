@@ -17,6 +17,7 @@ export const useEventsStore = defineStore('events', () => {
   const endDate = ref(getInitialEndDate())
   const startTime = ref('00:00')
   const endTime = ref('23:59')
+  const sortingWith = ref('createdAt_asc')
 
   const filterEventsBySearchTerm = (events) => {
     // Filter events based on the search term in the title or description
@@ -26,7 +27,10 @@ export const useEventsStore = defineStore('events', () => {
         event.title?.toLowerCase().includes(searchTerm.value?.toLowerCase()) ||
         event.description
           ?.toLowerCase()
-          .includes(searchTerm.value?.toLowerCase()),
+          .includes(searchTerm.value?.toLowerCase()) ||
+        event.district
+          ?.toLowerCase()
+          .includes(searchTerm.value?.toLowerCase())
     )
   }
 
@@ -48,10 +52,31 @@ export const useEventsStore = defineStore('events', () => {
     })
   }
 
+  const sortEvents = (events) => {
+    // Sort events based on the sortingWith value
+    switch (sortingWith.value) {
+      case 'createdAt_asc':
+        return events.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
+      case 'createdAt_desc':
+        return events.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+      case 'date_asc':
+        return events.sort((a, b) => new Date(a.date) - new Date(b.date))
+      case 'date_desc':
+        return events.sort((a, b) => new Date(b.date) - new Date(a.date))
+      case 'time_asc':
+        return events.sort((a, b) => a.startTime.localeCompare(b.startTime))
+      case 'time_desc':
+        return events.sort((a, b) => b.startTime.localeCompare(a.startTime))
+      default:
+        return events
+    }
+  }
+
   const filteredAndSortedEvents = computed(() => {
     let currentEvents = filterEventsBySearchTerm(mockedEventsFull)
     currentEvents = filterEventsByDate(currentEvents)
     currentEvents = filterEventsByTime(currentEvents)
+    currentEvents = sortEvents(currentEvents)
     return currentEvents
   })
 
@@ -62,9 +87,6 @@ export const useEventsStore = defineStore('events', () => {
     endDate,
     startTime,
     endTime,
-
-    //actions
-    filterEventsByDate,
-    filterEventsByTime,
+    sortingWith,
   }
 })

@@ -16,6 +16,8 @@ export const mockedEvents = [
     startTime: '10:00',
     endTime: '13:00',
     phone: '03012345678',
+    // A date in the next seven days for createdAt inserted
+    createdAt: new Date(Date.now() + 0.4 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 2,
@@ -34,6 +36,7 @@ export const mockedEvents = [
     startTime: '09:30',
     endTime: '12:30',
     phone: '03087654321',
+    createdAt: new Date(Date.now() + 0.2 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 3,
@@ -51,8 +54,9 @@ export const mockedEvents = [
     startTime: '11:00',
     endTime: '14:00',
     phone: '03023456789',
+    createdAt: new Date(Date.now() + 0.5 * 7 * 24 * 60 * 60 * 1000),
   },
-]
+];
 
 export const mockedEventsFull = [
   {
@@ -72,6 +76,7 @@ export const mockedEventsFull = [
     startTime: '10:00',
     endTime: '13:00',
     phone: '03012345678',
+    createdAt: new Date(Date.now() + 0.7 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 2,
@@ -90,6 +95,7 @@ export const mockedEventsFull = [
     startTime: '09:30',
     endTime: '12:30',
     phone: '03087654321',
+    createdAt: new Date(Date.now() + 0.9 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 3,
@@ -107,6 +113,7 @@ export const mockedEventsFull = [
     startTime: '11:00',
     endTime: '14:00',
     phone: '03023456789',
+    createdAt: new Date(Date.now() + 0.2 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 4,
@@ -124,6 +131,7 @@ export const mockedEventsFull = [
     startTime: '14:00',
     endTime: '17:00',
     phone: '03034567890',
+    createdAt: new Date(Date.now() + 0.4 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 5,
@@ -141,6 +149,7 @@ export const mockedEventsFull = [
     startTime: '10:00',
     endTime: '13:30',
     phone: '03056789012',
+    createdAt: new Date(Date.now() + 0.5 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 6,
@@ -158,6 +167,7 @@ export const mockedEventsFull = [
     startTime: '13:00',
     endTime: '16:00',
     phone: '03067890123',
+    createdAt: new Date(Date.now() + 0.5 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 7,
@@ -176,6 +186,7 @@ export const mockedEventsFull = [
     startTime: '09:00',
     endTime: '12:00',
     phone: '03078901234',
+    createdAt: new Date(Date.now() + 0.2 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 8,
@@ -193,6 +204,7 @@ export const mockedEventsFull = [
     startTime: '10:00',
     endTime: '14:00',
     phone: '03089012345',
+    createdAt: new Date(Date.now() + 0.5 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 9,
@@ -210,6 +222,7 @@ export const mockedEventsFull = [
     startTime: '10:00',
     endTime: '13:00',
     phone: '03090123456',
+    createdAt: new Date(Date.now() + 0.9 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 10,
@@ -227,6 +240,7 @@ export const mockedEventsFull = [
     startTime: '14:00',
     endTime: '16:00',
     phone: '03001234567',
+    createdAt: new Date(Date.now() + 0.5 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 11,
@@ -245,6 +259,7 @@ export const mockedEventsFull = [
     startTime: '10:00',
     endTime: '13:00',
     phone: '+49 30 12345678',
+    createdAt: new Date(Date.now() + 0.5 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 12,
@@ -262,6 +277,7 @@ export const mockedEventsFull = [
     startTime: '11:00',
     endTime: '15:00',
     phone: '+49 30 98765432',
+    createdAt: new Date(Date.now() + 0.4 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 13,
@@ -279,6 +295,7 @@ export const mockedEventsFull = [
     startTime: '09:00',
     endTime: '11:00',
     phone: '+49 30 24681357',
+    createdAt: new Date(Date.now() + 0.7 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 14,
@@ -296,6 +313,7 @@ export const mockedEventsFull = [
     startTime: '10:00',
     endTime: '14:00',
     phone: '+49 30 13579135',
+    createdAt: new Date(Date.now() + 0.9 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 15,
@@ -313,6 +331,7 @@ export const mockedEventsFull = [
     startTime: '14:00',
     endTime: '17:00',
     phone: '+49 30 24681358',
+    createdAt: new Date(Date.now() + 0.5 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 16,
@@ -330,6 +349,7 @@ export const mockedEventsFull = [
     startTime: '13:00',
     endTime: '16:00',
     phone: '+49 30 96385274',
+    createdAt: new Date(Date.now() + 0.4 * 7 * 24 * 60 * 60 * 1000),
   },
   {
     id: 17,
@@ -348,5 +368,6 @@ export const mockedEventsFull = [
     startTime: '10:00',
     endTime: '14:00',
     phone: '+49 30 85274196',
+    createdAt: new Date(Date.now() + 0.7 * 7 * 24 * 60 * 60 * 1000),
   },
 ]

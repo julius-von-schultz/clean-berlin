@@ -1,7 +1,7 @@
 <template>
   <div class="sorting-bar">
     <CustomSelect
-      v-model="selectedOption"
+      v-model="sortingWith"
       :options="selectOptions"
       :placeholder="t('sorting.sortSelectPlaceholder')"
     />
@@ -9,6 +9,9 @@
 </template>
 
 <script setup>
+import { useEventsStore } from '~/stores/events/events.js'
+import { storeToRefs } from 'pinia'
+
 const { t } = useI18n()
 
 const selectOptions = [
@@ -20,5 +23,6 @@ const selectOptions = [
   { value: 'time_desc', label: t('sorting.time.buttonDsc') },
 ]
 
-const selectedOption = ref('createdAt_asc')
+const eventsStore = useEventsStore()
+const { sortingWith } = storeToRefs(eventsStore)
 </script>
