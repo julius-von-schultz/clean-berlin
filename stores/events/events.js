@@ -4,9 +4,19 @@ import { mockedEvents } from '~/stores/events/partials/mockData'
 export const useEventsStore = defineStore('events', () => {
   const currentEvents = ref(mockedEvents)
 
+  const formatDate = (date) => {
+    return date.toISOString().split('T')[0]
+  }
+
+  const getInitialEndDate = () => {
+    const date = new Date()
+    date.setUTCFullYear(date.getUTCFullYear() + 2)
+    return formatDate(date)
+  }
+
   const searchTerm = ref(null)
-  const startDate = ref('2025-01-18')
-  const endDate = ref('2027-01-18')
+  const startDate = ref(formatDate(new Date()))
+  const endDate = ref(getInitialEndDate())
   const startTime = ref('00:00')
   const endTime = ref('23:59')
 

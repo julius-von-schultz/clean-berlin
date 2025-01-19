@@ -1,43 +1,35 @@
 <template>
-  <div>
-    <GenericRangePicker
-      input-type="date"
-      :from-label="$t('sorting.date.from')"
-      :from-value="startDate"
-      :to-label="$t('sorting.date.until')"
-      :to-value="endDate"
-      icon="date_range"
-      :rules="{
-        valid: helpers.withMessage(validMessage, isValid),
-        present: helpers.withMessage(pastMessage, isNotInThePast),
-        isStartBeforeEndDate: helpers.withMessage(
-          startBeforeEndMessage,
-          isStartBeforeEndDate,
-        ),
-      }"
-      @update:from-value="startDate = $event"
-      @update:to-value="endDate = $event"
-    />
-  </div>
+  <GenericRangePicker
+    input-type="date"
+    :from-label="$t('sorting.date.from')"
+    :from-value="internalStartDate"
+    :to-label="$t('sorting.date.until')"
+    :to-value="internalEndDate"
+    icon="date_range"
+    :rules="{
+      valid: helpers.withMessage(validMessage, isValid),
+      present: helpers.withMessage(pastMessage, isNotInThePast),
+      isStartBeforeEndDate: helpers.withMessage(
+        startBeforeEndMessage,
+        isStartBeforeEndDate,
+      ),
+    }"
+    @update:from-value="updateStartDate($event)"
+    @update:to-value="updateEndDate($event)"
+  />
 </template>
 
 <script setup lang="ts">
 import { helpers } from '@vuelidate/validators'
-
+import useVuelidate from '@vuelidate/core'
+import { useEventsStore } from '~/stores/events/events'
 const { t } = useI18n()
 
-const formatDate = (date: Date) => {
-  return date.toISOString().split('T')[0]
-}
+const eventStore = useEventsStore()
+const { startDate, endDate } = storeToRefs(eventStore)
 
-const getInitialEndDate = () => {
-  const date = new Date()
-  date.setUTCFullYear(date.getUTCFullYear() + 2)
-  return formatDate(date)
-}
-
-const startDate = ref(formatDate(new Date()))
-const endDate = ref(getInitialEndDate())
+const internalStartDate = ref(startDate.value)
+const internalEndDate = ref(endDate.value)
 
 const isValid = (value: string) => {
   const dateRegex = /^\d{4}-\d{2}-\d{2}$/ // Matches YYYY-MM-DD format
@@ -76,9 +68,9 @@ const isNotInThePast = (value: string) => {
 }
 
 const isStartBeforeEndDate = () => {
-  // Parse the dates
-  const start = new Date(startDate.value)
-  const end = new Date(endDate.value)
+  // Parse the date
+  const start = new Date(internalStartDate.value)
+  const end = new Date(internalEndDate.value)
 
   // Return true only if startDate is strictly before endDate
   return start <= end
@@ -87,4 +79,25 @@ const isStartBeforeEndDate = () => {
 const validMessage = t('sorting.date.validMessage')
 const pastMessage = t('sorting.date.pastMessage')
 const startBeforeEndMessage = t('sorting.date.startBeforeEndMessage')
+
+const v = useVuelidate()
+
+const formHasNoErrors = computed(() => {
+  v.value.$validate()
+  return v.value.$errors.length + v.value.$silentErrors.length === 0
+})
+
+const updateStartDate = (event: string) => {
+  internalStartDate.value = event
+  if (formHasNoErrors.value) {
+    startDate.value = event
+  }
+}
+
+const updateEndDate = (event: string) => {
+  internalEndDate.value = event
+  if (formHasNoErrors.value) {
+    endDate.value = event
+  }
+}
 </script>
