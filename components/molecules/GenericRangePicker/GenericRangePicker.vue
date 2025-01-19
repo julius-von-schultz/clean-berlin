@@ -2,17 +2,17 @@
   <div class="range-picker">
     <span class="range-picker__label">{{ fromLabel }}</span>
     <InputField
+      v-model="internalFromValue"
       class="range-picker__input"
       :input-type="inputType"
-      :model-value="fromValue"
       :icon="icon"
       :rules="rules"
     />
     <span class="range-picker__label">{{ toLabel }}</span>
     <InputField
+      v-model="internalToValue"
       class="range-picker__input"
       :input-type="inputType"
-      :model-value="toValue"
       :icon="icon"
       :rules="rules"
     />
@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
   inputType: {
     type: String,
     default: 'time',
@@ -49,6 +49,19 @@ defineProps({
     type: Object,
     default: () => ({}),
   },
+})
+
+const emit = defineEmits(['update:fromValue', 'update:toValue'])
+
+const internalFromValue = ref(props.fromValue)
+const internalToValue = ref(props.toValue)
+
+watch(internalFromValue, () => {
+  emit('update:fromValue', internalFromValue.value)
+})
+
+watch(internalToValue, () => {
+  emit('update:toValue', internalToValue.value)
 })
 </script>
 

@@ -1,17 +1,24 @@
 <template>
-  <GenericRangePicker
-    input-type="date"
-    :from-label="$t('sorting.date.from')"
-    :from-value="currentDate"
-    :to-label="$t('sorting.date.until')"
-    :to-value="targetDate"
-    icon="date_range"
-    :rules="{
-      valid: helpers.withMessage(validMessage, isValid),
-      present: helpers.withMessage(pastMessage, isNotInThePast),
-      startBeforeEndDate: helpers.withMessage(startBeforeEndMessage, isStartBeforeEndDate),
-    }"
-  />
+  <div>
+    <GenericRangePicker
+      input-type="date"
+      :from-label="$t('sorting.date.from')"
+      :from-value="startDate"
+      :to-label="$t('sorting.date.until')"
+      :to-value="endDate"
+      icon="date_range"
+      :rules="{
+        valid: helpers.withMessage(validMessage, isValid),
+        present: helpers.withMessage(pastMessage, isNotInThePast),
+        isStartBeforeEndDate: helpers.withMessage(
+          startBeforeEndMessage,
+          isStartBeforeEndDate,
+        ),
+      }"
+      @update:from-value="startDate = $event"
+      @update:to-value="endDate = $event"
+    />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -23,13 +30,14 @@ const formatDate = (date: Date) => {
   return date.toISOString().split('T')[0]
 }
 
-const currentDate = computed(() => formatDate(new Date()))
-
-const targetDate = computed(() => {
+const getInitialEndDate = () => {
   const date = new Date()
   date.setUTCFullYear(date.getUTCFullYear() + 2)
   return formatDate(date)
-})
+}
+
+const startDate = ref(formatDate(new Date()))
+const endDate = ref(getInitialEndDate())
 
 const isValid = (value: string) => {
   const dateRegex = /^\d{4}-\d{2}-\d{2}$/ // Matches YYYY-MM-DD format
@@ -68,18 +76,15 @@ const isNotInThePast = (value: string) => {
 }
 
 const isStartBeforeEndDate = () => {
-  // Parse the dates into Date objects for comparison
-  const start = new Date(currentDate.value);
-  const end = new Date(targetDate.value);
+  // Parse the dates
+  const start = new Date(startDate.value)
+  const end = new Date(endDate.value)
 
-  // TODO current and target date are the initial values. This check must be done with the model values
-
-  console.log('*** isSmaller', start < end)
-
-  return start < end; // Return true if startDate is before endDate
+  // Return true only if startDate is strictly before endDate
+  return start <= end
 }
 
 const validMessage = t('sorting.date.validMessage')
 const pastMessage = t('sorting.date.pastMessage')
-const startBeforeEndMessage = 'Check'
+const startBeforeEndMessage = t('sorting.date.startBeforeEndMessage')
 </script>

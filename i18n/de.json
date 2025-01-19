@@ -18,14 +18,16 @@
       "buttonAsc": "Frühestestes Datum zuerst...",
       "buttonDsc": "Spätestes Datum zuerst...",
       "validMessage": "Das eingegebene Datum ist nicht gültig.",
-      "pastMessage": "Das eingegebene Datum liegt in der Vergangenheit."
+      "pastMessage": "Das eingegebene Datum liegt in der Vergangenheit.",
+      "startBeforeEndMessage": "Das eingegebene Startdatum liegt vor dem Enddatum."
     },
     "time": {
       "from": "Von",
       "until": "bis",
       "buttonAsc": "Frühesteste Zeit zuerst...",
       "buttonDsc": "Späteste Zeit zuerst...",
-      "validMessage": "Die eingegebene Uhrzeit ist nicht gültig."
+      "validMessage": "Die eingegebene Uhrzeit ist nicht gültig.",
+      "startBeforeEndMessage": "Die eingegebene Startzeit liegt vor der Endzeit."
     },
     "createdAt": {
       "buttonAsc": "Neueste Events zuerst...",
