@@ -23,6 +23,7 @@
         :is-open="modalIsOpen"
         class="index-page__sorting-modal"
       />
+      <SortingButtonBar />
     </ContentWrapper>
     <EventCardGrid class="index-page__card-grid" />
   </div>
@@ -52,6 +53,7 @@ const openOrCloseModal = () => {
   &__search-and-sort {
     @apply flex;
     @apply gap-x-4;
+    @apply mb-8;
   }
 
   &__search-bar {
@@ -63,7 +65,7 @@ const openOrCloseModal = () => {
   }
 
   &__sorting-modal {
-    @apply mt-8;
+    @apply my-8;
   }
 }
 </style>

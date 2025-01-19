@@ -1,14 +1,15 @@
 <template>
   <Transition name="modal-grow">
     <div v-if="isOpen" class="sorting-modal">
+      <p class="sorting-modal__description">{{ t('sorting.description') }}</p>
       <DateRangePicker />
       <TimeRangePicker />
-      <SortingButtonBar class="sorting-modal__buttons" />
     </div>
   </Transition>
 </template>
 
 <script setup>
+const { t } = useI18n();
 defineProps({
   isOpen: {
     type: Boolean,
@@ -21,6 +22,12 @@ defineProps({
 .sorting-modal {
   @apply flex flex-col;
   @apply gap-y-7;
+
+  &__description {
+    @apply text-sm;
+    @apply leading-3;
+    @apply text-cb-grey-4;
+  }
 
   &__buttons {
     @screen md {

@@ -3,7 +3,7 @@
     "loginButton": "Einloggen",
     "imageLogoAlt": "Logo",
     "languageSwitcherLabel": "Sprache",
-    "searchPlaceholder": "Suche nach Datum, Ort oder Schlagwort …",
+    "searchPlaceholder": "Suche nach Datum, Bezirk oder Schlagwort …",
     "events": "Events",
     "favorites": "Favoriten",
     "map": "Karte",
@@ -16,6 +16,7 @@
     "filterButtonStart": "Filter",
     "filterButtonCancel": "Abbrechen",
     "sortSelectPlaceholder": "Sortiere nach...",
+    "description": "Filtern und sortieren Sie Events nach Stichworten, Bezirk, Datum oder Uhrzeit – so finden Sie schnell das passende Event.",
     "date": {
       "from": "Vom",
       "until": "bis zum",
