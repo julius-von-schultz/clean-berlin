@@ -9,12 +9,12 @@
     "searchPlaceholder": "Suche Event, Bezirk, Begriff, Zeit, ..."
   },
   "sorting": {
-    "sortButtonStart": "Sortiere nach...",
-    "sortButtonCancel": "Abbrechen",
+    "filterButtonStart": "Filter",
+    "filterButtonCancel": "Abbrechen",
+    "sortSelectPlaceholder": "Sortiere nach...",
     "date": {
       "from": "Vom",
       "until": "bis zum",
-      "placeholderSorting": "Nach Datum sortieren...",
       "buttonAsc": "Frühestestes Datum zuerst...",
       "buttonDsc": "Spätestes Datum zuerst...",
       "validMessage": "Das eingegebene Datum ist nicht gültig.",
@@ -23,13 +23,11 @@
     "time": {
       "from": "Von",
       "until": "bis",
-      "placeholderSorting": "Nach Zeit sortieren...",
       "buttonAsc": "Frühesteste Zeit zuerst...",
       "buttonDsc": "Späteste Zeit zuerst...",
       "validMessage": "Die eingegebene Uhrzeit ist nicht gültig."
     },
     "createdAt": {
-      "placeholderSorting": "Nach Aktualität sortieren...",
       "buttonAsc": "Neueste Events zuerst...",
       "buttonDsc": "Älteste Events zuerst..."
     }

@@ -9,8 +9,9 @@
     "searchPlaceholder": "Search event, district, term, time ..."
   },
   "sorting": {
-    "sortButtonStart": "Sort by...",
-    "sortButtonCancel": "Cancel",
+    "filterButtonStart": "Filter",
+    "filterButtonCancel": "Cancel",
+    "sortSelectPlaceholder": "Sort by...",
     "date": {
       "from": "From",
       "until": "until",
@@ -23,13 +24,11 @@
     "time": {
       "from": "From",
       "until": "until",
-      "placeholderSorting": "Sort by time...",
       "buttonAsc": "Earliest time first...",
       "buttonDsc": "Latest time first...",
       "validMessage": "The time entered is not valid."
     },
     "createdAt": {
-      "placeholderSorting": "Sort by recency...",
       "buttonAsc": "Newest events first...",
       "buttonDsc": "Oldest Events first..."
     }

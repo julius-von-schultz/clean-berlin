@@ -110,11 +110,11 @@ onClickOutside(target, () => (isOpen.value = false))
     @apply w-full;
     top: 100%;
     left: 0;
-    border: 2px solid;
+    @apply border-2;
     @apply border-cb-green-darker/75;
     @apply bg-cb-white;
     @apply rounded-xl;
-    @apply mt-1;
+    @apply mt-2;
     z-index: 10;
   }
 

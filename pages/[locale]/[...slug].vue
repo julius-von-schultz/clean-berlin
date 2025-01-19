@@ -9,12 +9,12 @@
         />
         <CbButton
           class="index-page__sort-button"
-          :icon="modalIsOpen ? 'close' : 'expand_more'"
+          :icon="modalIsOpen ? 'close' : 'filter_list'"
           has-shadow
           :label="
             modalIsOpen
-              ? $t('sorting.sortButtonCancel')
-              : $t('sorting.sortButtonStart')
+              ? $t('sorting.filterButtonCancel')
+              : $t('sorting.filterButtonStart')
           "
           @click="openOrCloseModal"
         />
