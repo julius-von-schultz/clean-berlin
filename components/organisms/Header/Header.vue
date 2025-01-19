@@ -72,6 +72,7 @@ export default defineComponent({
   &__login-button {
     align-self: flex-end;
     @apply mb-[26px];
+
     @screen lg {
       @apply row-start-2;
       @apply col-start-9;

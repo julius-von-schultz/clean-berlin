@@ -9,6 +9,7 @@
         />
         <CbButton
           class="index-page__sort-button"
+          background-color="green"
           :icon="modalIsOpen ? 'close' : 'filter_list'"
           has-shadow
           :label="
