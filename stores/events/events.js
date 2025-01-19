@@ -2,6 +2,8 @@ import { defineStore } from 'pinia'
 import { mockedEventsFull } from '~/stores/events/partials/mockData'
 
 export const useEventsStore = defineStore('events', () => {
+  const fetchedEvents = mockedEventsFull
+
   const formatDate = (date) => {
     return date.toISOString().split('T')[0]
   }
@@ -28,9 +30,7 @@ export const useEventsStore = defineStore('events', () => {
         event.description
           ?.toLowerCase()
           .includes(searchTerm.value?.toLowerCase()) ||
-        event.district
-          ?.toLowerCase()
-          .includes(searchTerm.value?.toLowerCase())
+        event.district?.toLowerCase().includes(searchTerm.value?.toLowerCase()),
     )
   }
 
@@ -56,9 +56,13 @@ export const useEventsStore = defineStore('events', () => {
     // Sort events based on the sortingWith value
     switch (sortingWith.value) {
       case 'createdAt_asc':
-        return events.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
+        return events.sort(
+          (a, b) => new Date(a.createdAt) - new Date(b.createdAt),
+        )
       case 'createdAt_desc':
-        return events.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+        return events.sort(
+          (a, b) => new Date(b.createdAt) - new Date(a.createdAt),
+        )
       case 'date_asc':
         return events.sort((a, b) => new Date(a.date) - new Date(b.date))
       case 'date_desc':
@@ -73,12 +77,16 @@ export const useEventsStore = defineStore('events', () => {
   }
 
   const filteredAndSortedEvents = computed(() => {
-    let currentEvents = filterEventsBySearchTerm(mockedEventsFull)
+    let currentEvents = filterEventsBySearchTerm(fetchedEvents)
     currentEvents = filterEventsByDate(currentEvents)
     currentEvents = filterEventsByTime(currentEvents)
     currentEvents = sortEvents(currentEvents)
     return currentEvents
   })
+
+  const findEventById = (id) => {
+    return fetchedEvents.find((event) => event.id === Number(id)) || {}
+  }
 
   return {
     filteredAndSortedEvents,
@@ -88,5 +96,8 @@ export const useEventsStore = defineStore('events', () => {
     startTime,
     endTime,
     sortingWith,
+
+    // actions
+    findEventById,
   }
 })

@@ -56,7 +56,7 @@ export const mockedEvents = [
     phone: '03023456789',
     createdAt: new Date(Date.now() + 0.5 * 7 * 24 * 60 * 60 * 1000),
   },
-];
+]
 
 export const mockedEventsFull = [
   {

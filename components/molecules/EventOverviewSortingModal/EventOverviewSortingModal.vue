@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-const { t } = useI18n();
+const { t } = useI18n()
 defineProps({
   isOpen: {
     type: Boolean,
