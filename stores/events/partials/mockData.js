@@ -6,7 +6,7 @@ export const mockedEvents = [
       'https://hsg-berlin.de/fileadmin/_processed_/a/b/csm_Kehrenbu__rger_2_9f3039378c.png',
     description:
       'Gemeinsames Aufräumen des Volksparks. Handschuhe und Müllsäcke werden gestellt.',
-    date: '2025-01-18',
+    date: '2025-02-18',
     district: 'Friedrichshain',
     participants: 25,
     email: 'contact@cleanberlin.de',
@@ -41,7 +41,7 @@ export const mockedEvents = [
     imageUrl:
       'https://img.sparknews.funkemedien.de/233352833/233352833_1631886811_v16_9_1200.jpeg',
     description: 'Wir reinigen und verschönern den Spielplatz für Kinder.',
-    date: '2025-01-19',
+    date: '2025-02-25',
     district: 'Prenzlauer Berg',
     participants: 15,
     email: 'playground@cleanberlin.de',
@@ -62,7 +62,7 @@ export const mockedEventsFull = [
       'https://hsg-berlin.de/fileadmin/_processed_/a/b/csm_Kehrenbu__rger_2_9f3039378c.png',
     description:
       'Gemeinsames Aufräumen des Volksparks. Handschuhe und Müllsäcke werden gestellt.',
-    date: '12.02.2025',
+    date: '2025-02-26',
     district: 'Friedrichshain',
     participants: 25,
     email: 'contact@cleanberlin.de',
@@ -80,7 +80,7 @@ export const mockedEventsFull = [
       'https://www.bsr.de/assets/images/reinigung_kehrpaket_2784x1856_3x2_rdax_1500x1000_85s.JPG',
     description:
       'Müllsammelaktion entlang der Spree. Bringt bitte wetterfeste Kleidung mit.',
-    date: '15.02.2025',
+    date: '2025-02-26',
     district: 'Mitte',
     participants: 40,
     email: 'cleanup.spree@gmail.com',
@@ -97,7 +97,7 @@ export const mockedEventsFull = [
     imageUrl:
       'https://img.sparknews.funkemedien.de/233352833/233352833_1631886811_v16_9_1200.jpeg',
     description: 'Wir reinigen und verschönern den Spielplatz für Kinder.',
-    date: '18.01.2025',
+    date: '2026-02-25',
     district: 'Prenzlauer Berg',
     participants: 15,
     email: 'playground@cleanberlin.de',
@@ -114,7 +114,7 @@ export const mockedEventsFull = [
     imageUrl:
       'https://worldcleanupday.de/wp-content/uploads/2024/09/KS_Umweltkalender8.jpg',
     description: 'Helft uns, die Straßen von Neukölln müllfrei zu machen.',
-    date: '20.02.2025',
+    date: '2026-02-25',
     district: 'Neukölln',
     participants: 30,
     email: 'cleanup.neukoelln@gmail.com',
@@ -131,7 +131,7 @@ export const mockedEventsFull = [
     imageUrl:
       'https://www.umweltkalender-berlin.de/picture/w678h509/32885_pexels_lara_jameson_9324307.jpg',
     description: 'Aufräumen des Tempelhofer Felds. Treffpunkt am Haupteingang.',
-    date: '22.01.2025',
+    date: '2026-02-25',
     district: 'Tempelhof',
     participants: 50,
     email: 'tempelhof@cleanberlin.de',
@@ -148,7 +148,7 @@ export const mockedEventsFull = [
     imageUrl:
       'https://weddingweiser.de/wp-content/uploads/2024/09/Gruppenbild-horizontal-1600x1067.jpg',
     description: 'Wir machen den Kiez um den Boxhagener Platz sauber.',
-    date: '25.02.2025',
+    date: '2026-02-12',
     district: 'Friedrichshain',
     participants: 20,
     email: 'kiez@cleanberlin.de',
@@ -166,7 +166,7 @@ export const mockedEventsFull = [
       'https://www.berlin.de/meingruenes-berlin/_assets/zusammen-sind-wir-park/world-cleanup-day-2022/world_cleanup_day-45541.jpg',
     description:
       'Müllsammlung am Landwehrkanal. Unterstütze uns bei der Aktion.',
-    date: '28.02.2025',
+    date: '2026-02-25',
     district: 'Kreuzberg',
     participants: 35,
     email: 'kanal@cleanberlin.de',
@@ -183,7 +183,7 @@ export const mockedEventsFull = [
     imageUrl:
       'https://pestalozzi-schule-berlin.de/uploads/2023/11/IMG_8690-scaled.jpg',
     description: 'Reinigung des Tiergartens. Treffpunkt: Café am Neuen See.',
-    date: '30.01.2025',
+    date: '2026-02-25',
     district: 'Tiergarten',
     participants: 45,
     email: 'tiergarten@cleanberlin.de',
@@ -200,7 +200,7 @@ export const mockedEventsFull = [
     imageUrl:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgq5jrAHj3RwpiQmrl7I99MzbMEt9VhSY4jw&s',
     description: 'Gemeinsame Müllaktion am Havelufer in Spandau.',
-    date: '02.02.2025',
+    date: '2026-02-25',
     district: 'Spandau',
     participants: 50,
     email: 'havel@cleanberlin.de',
@@ -217,7 +217,7 @@ export const mockedEventsFull = [
     imageUrl:
       'https://www.roa.de/wp-content/uploads/2022/04/muell-sammeln-berliner-parks.jpg',
     description: 'Reinigung rund um den S-Bahnhof Ostkreuz.',
-    date: '04.02.2025',
+    date: '2026-02-25',
     district: 'Friedrichshain',
     participants: 15,
     email: 'ostkreuz@cleanberlin.de',
@@ -235,7 +235,7 @@ export const mockedEventsFull = [
       'https://img.welt.de/img/reise/staedtereisen/mobile199240564/6887932837-coriginal-w2000/Berlin-Touristen-sammeln-Muell-bei-Stadtfuehrung.jpg',
     description:
       'Gemeinsam reinigen wir den beliebten Volkspark Friedrichshain.',
-    date: '10.01.2025',
+    date: '2026-02-25',
     district: 'Friedrichshain',
     participants: 15,
     email: 'parkcleanup@cleanberlin.de',
@@ -252,7 +252,7 @@ export const mockedEventsFull = [
     imageUrl:
       'https://www.berlin.de/imgscaler/u16Azvn7Kfq7BLWn7v3lAPox3rp4hDlJGlaR_SeXFyU/ropen/L3N5czExLXByb2QvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL2NpdHktd2VzdC1ibG9nLzIwMjIvNjNkZjJkMzctYzE0NC00ZTRkLThkOGQtM2NlYTMxNWNjNWI0LmpwZw.jpg?ts=1665484530',
     description: 'Wir sammeln Müll entlang der Spree in Kreuzberg.',
-    date: '12.01.2025',
+    date: '2026-02-25',
     district: 'Friedrichshain-Kreuzberg',
     participants: 25,
     email: 'spreecleanup@cleanberlin.de',
@@ -269,7 +269,7 @@ export const mockedEventsFull = [
     imageUrl:
       'https://img.sparknews.funkemedien.de/239527361/239527361_1694616793_v16_9_1200.jpeg',
     description: 'Wir machen den Spielplatz an der Warschauer Straße sauber.',
-    date: '15.01.2025',
+    date: '2026-02-25',
     district: 'Friedrichshain',
     participants: 10,
     email: 'spielplatz@cleanberlin.de',
@@ -286,7 +286,7 @@ export const mockedEventsFull = [
     imageUrl:
       'https://cleanupnetwork.com/wp-content/themes/yootheme/cache/07/cleanup-trepnick-network-07d62051.jpeg',
     description: 'Aufräumaktion am Ufer des Landwehrkanals in Kreuzberg.',
-    date: '18.02.2025',
+    date: '2026-02-25',
     district: 'Friedrichshain-Kreuzberg',
     participants: 20,
     email: 'uferreinigung@cleanberlin.de',
@@ -303,7 +303,7 @@ export const mockedEventsFull = [
     imageUrl:
       'https://www.kehrenbuerger.de/assets/pictures/Klimalauf_vorher_4MB_20580_rdax_960x720s.jpg',
     description: 'Helft uns, den Boxhagener Platz von Müll zu befreien.',
-    date: '20.01.2025',
+    date: '2026-02-25',
     district: 'Friedrichshain',
     participants: 12,
     email: 'platzsaeubern@cleanberlin.de',
@@ -320,7 +320,7 @@ export const mockedEventsFull = [
     imageUrl:
       'https://berliner-zeitung.imgix.net/2024/03/19/ff43ebe6-b72a-4c6d-ad98-0f863216bf39.jpeg?w=1024&auto=format',
     description: 'Gemeinsam säubern wir die Oranienstraße in Kreuzberg.',
-    date: '22.01.2025',
+    date: '2026-02-25',
     district: 'Friedrichshain-Kreuzberg',
     participants: 30,
     email: 'strassenreinigung@cleanberlin.de',
@@ -338,7 +338,7 @@ export const mockedEventsFull = [
       'https://www.kehrenbuerger.de/assets/pictures/20211106_111449__1__17895_rdax_960x720s.jpg',
     description:
       'Aufräumaktion im Treptower Park für ein sauberes Naherholungsgebiet.',
-    date: '25.01.2025',
+    date: '2026-02-25',
     district: 'Köpenick',
     participants: 18,
     email: 'waldcleanup@cleanberlin.de',

@@ -1,9 +1,7 @@
 import { defineStore } from 'pinia'
-import { mockedEvents } from '~/stores/events/partials/mockData'
+import { mockedEventsFull } from '~/stores/events/partials/mockData'
 
 export const useEventsStore = defineStore('events', () => {
-  const currentEvents = ref(mockedEvents)
-
   const formatDate = (date) => {
     return date.toISOString().split('T')[0]
   }
@@ -51,11 +49,13 @@ export const useEventsStore = defineStore('events', () => {
   }
 
   const filteredAndSortedEvents = computed(() => {
-    return filterEventsBySearchTerm(currentEvents.value)
+    let currentEvents = filterEventsBySearchTerm(mockedEventsFull)
+    currentEvents = filterEventsByDate(currentEvents)
+    currentEvents = filterEventsByTime(currentEvents)
+    return currentEvents
   })
 
   return {
-    currentEvents,
     filteredAndSortedEvents,
     searchTerm,
     startDate,
