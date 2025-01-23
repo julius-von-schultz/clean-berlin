@@ -155,7 +155,7 @@ export const mockedEventsFull = [
     id: 6,
     title: 'Kiez Cleanup',
     imageUrl:
-      'https://weddingweiser.de/wp-content/uploads/2024/09/Gruppenbild-horizontal-1600x1067.jpg',
+      'https://www.roa.de/wp-content/uploads/2022/04/muell-sammeln-berliner-parks.jpg',
     description: 'Wir machen den Kiez um den Boxhagener Platz sauber.',
     date: '2026-02-12',
     district: 'Friedrichshain',
